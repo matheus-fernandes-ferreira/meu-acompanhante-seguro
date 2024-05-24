@@ -1,0 +1,42 @@
+
+@media only screen and (max-width: 428px){
+#cadastro-1 
+{
+    display: flex;
+   flex-direction: column;
+   width: 750x;
+   height: 600px;
+   background-color: #cfcdcdcc;
+  color: #000000;
+   border: 1px solid red;
+   align-content: space-around;
+   flex-wrap: wrap;
+   justify-content: center;
+
+}
+
+
+#button{
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+  border-radius: 100px;
+  margin-top: 50px;
+  justify-content: center;
+  align-content: space-around;
+  border: 1px solid red;
+
+ 
+}
+
+#name{
+  border-radius: 100px;
+
+}
+
+#editar-button{
+  display: flex;
+  flex-wrap: column;
+}
+
+}
