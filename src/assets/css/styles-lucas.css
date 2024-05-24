@@ -3,6 +3,7 @@
 
     body {
         background: rgb(207, 207, 207);
+        
     }
     
     ul {
@@ -49,7 +50,7 @@
     
     #pagina-principal {
         border: red 1px solid;
-        height: 1000px;
+        height: 2000px;
     }
     
     #banner {
