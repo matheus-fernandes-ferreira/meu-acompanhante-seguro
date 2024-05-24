@@ -5,33 +5,73 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
-    background-color: #fff;
-    padding: 20px 0;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
+    border: 1px solid red;
 }
 
 nav li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 10px;
+    border: 1px solid red;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
+    
 }
 
-.hero {
+
+
+destaque {
+    border: 1px solid red;
+}
+
+
+/*Inicio menu superior*/
+#logo {
+    width: 150px;
+    height: 50px;
+    border: 1px solid blue;
+}
+
+#menu-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid blue;
+}
+
+#lado-esquerdo {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid blue;
+}
+
+#lado-direito {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid blue;
+}
+/*Fim menu superior*/
+
+#banner {
+    height: 300px;
+    background: gray;
+}
+#placeholder {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    margin-top: 10px;
+    border: 1px solid blue;
+}
+
+
+@media only screen and (max-width: 428px) {
+
 }
