@@ -1,26 +1,122 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-section {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#span-titulo-bem-vindo {
+    font-weight: bolder;
+}
+
+.section-bem-vindo {
+    border: 1px solid rgb(60, 255, 0);
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
+    justify-content: center;
 }
 
 
 .textoBemVindo {
+    color: #1C486F;
     text-align: center;
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 300px;
+}
+
+.mid-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 300px;
+}
+
+.box-text {
+    border: 1px solid red;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#box-img-bem-vindo{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.box-img-bem-vindo-mid{
+    background-color: green;
+    width: 40%;
+    height: 100%;
+}
+
+.box-img-bem-vindo {
+    display: flex;
+    justify-content: end;
+    border: 1px solid blue;
+    width: 40%;
+    height: 100%;
+    background-color: yellow;
+}
+.mid-img1{
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#top-img{
+    width: 60%;
+    align-items: start;
+}
+
+#mid-img{
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    justify-content: end;
+}
+
+#botton-img{
+    width: 60%;
+}
+
+#botton-text-bem-vindo{
+    justify-content: end;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:380px) {
-    body {
-        font-size: 16px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
 
     section {
         display: flex;
@@ -30,7 +126,7 @@ section {
     }
 
     .img1 {
-        width: 300px;
+        width: 10%;
     }
 
     .textoBemVindo {
