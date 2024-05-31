@@ -1,136 +1,115 @@
 * {
-    padding: 0px;
+    list-style: none;
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+html {
     font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#span-titulo-bem-vindo {
-    font-weight: bolder;
-}
-
-.section-bem-vindo {
-    border: 1px solid rgb(60, 255, 0);
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-
-.textoBemVindo {
     color: #1C486F;
-    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section-bemVindo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 80%;
-    height: 300px;
+    display: flex;
+    width: 700px;
+    height: 200px;
 }
 
-.mid-content {
+.box-imagem {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 80%;
-    height: 300px;
-}
-
-.box-text {
-    border: 1px solid red;
-    display: flex;
-    width: 60%;
+    flex-direction: column;
+    width: 30%;
     height: 100%;
+}
+
+.box-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.box-texto>p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.title-bemVindo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 1.5rem;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
-
-#box-img-bem-vindo{
-    width: 40%;
-    display: flex;
-    justify-content: center;
+.title-bemVindo>p>span {
+    font-weight: 900;
+    color: white;
+    background-color: #1C486F;
 }
 
-.box-img-bem-vindo-mid{
-    background-color: green;
-    width: 40%;
+.title-bemVindo>p #span-seguro {
+    color: #FFBD59;
+}
+
+.box-imagem>img {
     height: 100%;
 }
 
-.box-img-bem-vindo {
-    display: flex;
-    justify-content: end;
-    border: 1px solid blue;
-    width: 40%;
-    height: 100%;
-    background-color: yellow;
-}
-.mid-img1{
-    width: 60%;
-    align-items: center;
-    justify-content: center;
-}
 
+/*Responsividade */
+@media (max-width: 768px) {
 
-#top-img{
-    width: 60%;
-    align-items: start;
-}
+    /* telas menores que 768px (tablets and mobiles) */
+    .sessao-nav {
+        height: 70px;
+    }
 
-#mid-img{
-    display: flex;
-    justify-content: end;
-    width: 50%;
-    justify-content: end;
-}
-
-#botton-img{
-    width: 60%;
-}
-
-#botton-text-bem-vindo{
-    justify-content: end;
-}
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:380px) {
-
-    section {
-        display: flex;
+    .content {
         flex-direction: column;
-        align-items: center;
-        align-content: center;
+        width: 100%;
+        height: auto;
     }
 
-    .img1 {
-        width: 10%;
+    .box-imagem,
+    .box-texto {
+        width: 100%;
+        height: auto;
     }
 
-    .textoBemVindo {
-        text-align: center;
-        font-size: 14px;
+    .box-texto>p {
+        padding-left: 20px;
+        padding-right: 20px;
     }
+}
+
+/* tablets  */
+  @media (min-width: 768px) and (max-width: 992px) {
+    /* telas entre 768px and 992px (tablets) */
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* telas entre 992px and 1200px (desktop) */
+}
+
+@media (min-width: 1200px) {
+    /* telas maiores que 1200px (large desktops) */
 }
