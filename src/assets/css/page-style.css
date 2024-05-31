@@ -1,0 +1,189 @@
+@media only screen and (max-width: 428px) {
+
+
+    main {
+        background-color: rgb(226, 235, 252);
+
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    /*area de teste*/
+
+
+    /*ate aqui*/
+
+
+    /*Start menu superio*/
+    #menu-superior {
+        border: 1px rgb(0, 81, 255) solid;
+        height: 56px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background: #1C486F;
+    }
+
+    #perfil {
+        width: 40px;
+        height: 40px;
+        border: 2px solid red;
+    }
+
+    #logo {
+        width: 150px;
+        height: 50px;
+        border: 1px solid red;
+    }
+
+    #conteudo-navegacao {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid;
+
+    }
+
+    .menu {
+        border: 1px solid red;
+    }
+
+    /*End menu superio*/
+
+
+    /*Start pagina principal*/
+    #pagina-principal {
+        border: red 1px solid;
+        height: 2500px;
+    }
+
+    #banner {
+        display: flex;
+        border: red 1px solid;
+    }
+
+    #acordeon {
+        border: 1px rgb(0, 255, 34) solid;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    #acordeon p {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .banner-acordeon {
+        display: flex;
+        flex-direction: row;
+        border: 1px rgb(0, 81, 255) solid;
+        height: 75px;
+        padding: 0px;
+        align-items: center;
+        background: #1C486F;
+        margin-bottom: 5px;
+    }
+
+    .fundo-icone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFBD59;
+        width: 50px;
+        height: 75px;
+    }
+
+    .fundo-triangulo-icone {
+        width: 0;
+        height: 0;
+        border-top: 38px solid transparent;
+        border-left: 25px solid #FFBD59;
+        border-bottom: 38px solid transparent;
+      }
+    
+    .icone-acordeon {
+        margin-left: 5px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .titulo-acordeon {
+        display: flex;
+        align-items: center;
+        width: 300px;
+        height: 40px;
+        margin-left: 5px;
+        color: white;
+    }
+
+    .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        border: 1px solid rgb(164, 173, 40);
+        width: 40px;
+        height: 40px;
+    }
+
+    /*End pagina principal*/
+    #informacao {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px rgb(0, 132, 255) solid;
+    }
+
+    #img1 {
+        border: 1px solid red;
+        height: 200px;
+    }
+
+    .bem-vindo {
+        border: 1px red solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .bem-vindo h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #destaque {
+        padding: 10px;
+        justify-content: center;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+   #destaque-titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFBD59;
+        height: 60px;
+   }
+
+    .conteudo-destaque {
+        display: flex;
+        flex-direction: row;
+        border: red 1px solid;
+    }
+    /*Start rodape*/
+    footer {
+        background: #1C486F;
+        border: 1px solid red;
+        height: 200px;
+
+    }
+
+    /*End rodape*/
+}
