@@ -13,23 +13,22 @@ main {
     width: 80%;
 }
 
+a {
+    text-decoration: none;
+}
+
 #menu-superior {
     border: 1px rgb(0, 81, 255) solid;
     height: 60px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px;
     background: #1C486F;
 }
 
-#perfil {
-    width: 40px;
-    height: 40px;
-    border: 2px solid red;
-}
 
 #logo {
     width: 150px;
@@ -37,15 +36,45 @@ main {
     border: 1px solid red;
 }
 
-#conteudo-navegacao {
+
+
+#menu-navegacao {
     display: flex;
     flex-direction: row;
-    border: 1px solid;
-
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+    
 }
 
-.menu {
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
     border: 1px solid red;
+}
+
+li a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+}
+#btn-acess {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#img-acess {
+    height: 45px;
+    width: 45px;
+    transition: 0.6s;
+}
+
+#img-acess:hover {
+    height: 50px;
+    width: 50px;
+    transition: 0.6s;
 }
 
 /*End menu superio*/
@@ -195,6 +224,11 @@ footer {
         list-style: none;
     }
 
+
+    #menu-navegacao {
+        display: none;
+        
+    }
     /*area de teste*/
 
 
