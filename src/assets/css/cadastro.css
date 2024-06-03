@@ -98,6 +98,7 @@ nav ul li a {
   background-position: center;
   background: linear-gradient(rgba(252, 199, 119, 0.7), rgba(252, 199, 119, 0.7)), url("/src/assets/imagem_cadastro/2.png") no-repeat center center;
   color: #1C486F;
+  border: solid yellow;
 }
 
 main {
@@ -107,13 +108,14 @@ main {
 .cadastro {
   display: flex;
   flex-direction: column;
-  width: 720 px;
+  width: 700px;
   height: 400px;
   background-color: #fff;
   margin-top: 20px;
   padding: 30px;
   box-shadow: 0 2px 5px rgba(34, 0, 224, 0.1);
   border-top-right-radius: 100px;
+  border: solid yellow;
 
 
 }
