@@ -1,42 +1,357 @@
-
-@media only screen and (max-width: 428px){
-#cadastro-1 
-{
-    display: flex;
-   flex-direction: column;
-   width: 750x;
-   height: 600px;
-   background-color: #cfcdcdcc;
-  color: #000000;
-   border: 1px solid red;
-   align-content: space-around;
-   flex-wrap: wrap;
-   justify-content: center;
-
+body {
+  display: flex;
+  flex-direction: column;
+  width: 1960x;
+  height: 1080px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-decoration: none;
 }
 
-
-#button{
+header {
+  background-color: #1c486f;
+  padding: 20px;
   display: flex;
   flex-direction: row;
-  width: 50px;
-  border-radius: 100px;
-  margin-top: 50px;
-  justify-content: center;
-  align-content: space-around;
-  border: 1px solid red;
-
- 
+  width: 99%;
+  height: 60px;
+  border: solid green;
+  align-items: center;
 }
 
-#name{
-  border-radius: 100px;
-
-}
-
-#editar-button{
+#box-img-superior-esquerdo {
   display: flex;
-  flex-wrap: column;
+  align-items: center;
+}
+
+#box-img-superior-esquerdo img {
+  height: 60px;
+  margin-right: 20px;
+}
+
+#box-img-superior-direito {
+  display: flex;
+  flex-direction: row;
+  background-color: #1c486f;
+}
+
+#box-img-superior-direito img {
+  height: 60px;
+  margin-left: 20px;
+  background-color: #1c486f;
+}
+
+
+#Menu-hamburguer {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+#box-cadastro {
+  border: solid 1px blue;
+  width: 980px;
+  height: 540px;
+  background-color: #1c486f;
+}
+
+#box-img {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px rgb(255, 0, 64);
+  width: 97%;
+  height: 540px;
+  background-color: #1c486f;
+  align-items: center;
+  justify-content: center;
+}
+
+#box-cadastro {
+  background-image: url("/src/assets/imagem_cadastro/2.png");
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(rgba(252, 199, 119, 0.7), rgba(252, 199, 119, 0.7)), url("/src/assets/imagem_cadastro/2.png") no-repeat center center;
+  color: #1C486F;
+}
+
+main {
+  padding: 20px;
+}
+
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  width: 720 px;
+  height: 400px;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 30px;
+  box-shadow: 0 2px 5px rgba(34, 0, 224, 0.1);
+  border-top-right-radius: 100px;
+
+
+}
+
+.cadastro h1 {
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 100px;
+}
+
+.campo input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.botoes {
+  text-align: center;
+}
+
+.botoes button {
+  padding: 10px 20px;
+  background-color: #1C486F;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.botoes button:hover {
+  background-color: #e98c21;
+}
+
+.botoes .voltar-button {
+  background-color: #FCBD5E;/
+}
+
+.botoes .voltar-button:hover {
+  background-color: #2980b9;
+}
+
+
+
+
+@media only screen and (max-width: 428px) {
+  body {
+  display: flex;
+  flex-direction: column;
+  width: 720px;
+  height: 420px;
+  font-size: xx-large;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-decoration: none;
+}
+
+header {
+  background-color: #1c486f;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 1050px;
+  height: 420px;
+  border: solid green;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+
+#box-img-superior-esquerdo {
+  display: flex;
+  align-items: center;
+}
+
+#box-img-superior-esquerdo img {
+  height: 60px;
+  margin-right: 20px;
+}
+#box-img-superior-direito {
+  display: flex;
+  flex-direction: row;
+  background-color: #1c486f;
+  padding-right: 5 px;
+}
+#box-img-superior-direito img {
+  height: 60px;
+  margin-left: 1px;
+  background-color: #1c486f;
+}
+#Menu-hamburguer{
+  display:flex;
+  flex-direction: row;
+}
+nav ul {
+  display: none;
+  flex-direction: row;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; 
+  
+}
+
+
+#box-img {
+  display: none;
+  flex-direction: column;
+  border: solid 1px rgb(255, 0, 64);
+  width: 450 px; 
+  height: 540px;
+  background-color: #1c486f;
+  align-items: center;
+  justify-content: center;
+}
+
+#box-cadastro {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/src/assets/imagem_cadastro/2.png");
+  background-size: cover;
+  height: 1080px ;
+  background-position: center;
+  background: linear-gradient(rgba(252, 199, 119, 0.7), rgba(252, 199, 119, 0.7)), url("/src/assets/imagem_cadastro/2.png") no-repeat center center;
+
+  background-size: 2000px;
+  color:#1C486F ;
+  align-items: center;
+  padding-right: 100px;
+  
+}
+
+
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  width: 870px;
+  padding-bottom: 160px;
+  background-color:#fff;
+  margin-top: 460px;
+  padding-left: 189px;
+  box-shadow: 0 2px 5px rgba(0.11, 0.28, 0.44);
+  border-top-right-radius: 190px;
+  justify-content: space-evenly;
+ border: solid rebeccapurple;
+ padding-right: 100px;
+  
+}
+
+       
+
+
+
+
+main {
+  padding: 20px;
+}
+
+
+
+.cadastro h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1C486F;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 100px;
+  color: #1C486F;
+}
+
+.campo input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #1C486F;
+  border-radius: 50px;
+
+}
+
+.botoes {
+  text-align: center;
+}
+
+.botoes button {
+  padding: 10px 50px;
+  background-color: #1C486F;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.botoes button:hover {
+  background-color: #e98c21;
+}
+
+.botoes .voltar-button {
+  background-color: #FCBD5E; 
+}
+
+.botoes .voltar-button:hover {
+  background-color: #2980b9; 
 }
 
 }
+
+   
