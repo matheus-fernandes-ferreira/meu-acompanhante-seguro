@@ -1,8 +1,10 @@
-#nomedistaque{
+.nomedistaque{
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: rgba(255, 189, 89, 1);
+    width: 100vw;
+    height: 60px;
 }
 .destaques{
     display: flex;
@@ -12,32 +14,69 @@
     color: rgba(28, 72, 111, 1);
 }
 
-#destaque{
+.destaque{
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 300px;
+    width: 200x;
 }
 
 .imgdest{
     display: flex;
     flex-direction: row;
-    height: 138px;
-    width: 138px;
+    height: 280px;
+    width: 280px;
+}
+#carrosel-destaque{
+    display: none;
 }
 
-@media screen and (max-width: 380px) {
-    .imgdest{
+.Banner-destaque{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 720px;
+    height: 300px;
+}
+
+.txt-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(28, 72, 111, 1);
+    width: 400px;
+    height: 280px;
+}
+
+@media screen and (max-width: 380px){
+    .nomedistaque{
         display: flex;
         flex-direction: row;
-        height: 138px;
-        width: 138px;
+        justify-content: center;
+        background-color: rgba(255, 189, 89, 1);
+        margin-bottom: 30px;
+        width: 100vw;
+        height: 50px;
     }
     .destaque{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Banner-destaque{
+        display: none;
+    }
+    #carrosel-destaque{
         display: flex;
         flex-direction: row;
-        align-items: center;
-        width: 181;
-        height: 163;
+        width: 400px;
+        height: 400px;
     }
-    
-}
+    .carousel-caption{
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+    }
+}           
