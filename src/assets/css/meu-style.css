@@ -13,7 +13,7 @@ html {
     height: 100vh;
 }
 
-.sessao-nav {
+.menu-superior {
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -26,20 +26,20 @@ html {
     height: 70px;
 }
 
-.sessao-nav>ul {
+.menu-superior .menu-navegacao {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-left: 50px;
 }
 
-.sessao-nav li {
+.menu-superior li {
     display: flex;
     flex-direction: row;
     padding-right: 40px;
 }
 
-.sessao-nav li a {
+.menu-superior li a {
     color: white;
     font-size: 1.5rem;
 }
@@ -52,15 +52,7 @@ html {
     top: 20px;
 }
 
-.um,
-.dois,
-.tres {
-    width: 80%;
-    height: 2px;
-    background-color: rgb(255, 255, 255);
-    margin: 6px auto;
-    transition-duration: 0.5s;
-}
+
 
 .banner-top {
     width: 100vw;
@@ -71,21 +63,17 @@ html {
     background-size: cover;
 }
 
-/* .banner-bck{
+.banner-bck{
         width: 100%;
         height: 100%;
-    } */
+    }
 
 .banner-content {
     display: flex;
     flex-direction: row;
 }
 
-.parte-logo {
-    width: 30%;
-    height: 100%;
-    border: 5px solid red;
-}
+
 
 .menu-content {
     width: 100vw;
@@ -137,7 +125,6 @@ html {
     flex-direction: column;
     width: 30%;
     height: 100%;
-
 }
 
 .box-texto {
@@ -214,4 +201,82 @@ html {
     width: 100%;
     height: 40%;
     background-color: #d3d3d3;
+}
+
+
+
+@media(max-width: 768px) {
+
+    .um,
+    .dois,
+    .tres {
+        width: 80%;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .menu-superior.on {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(28, 72, 111, 1);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-superior .menu-navegacao{
+        display: none;
+    }
+
+   .logo-img {
+        display: none;
+    }
+
+    .menu-superior.on .menu-togle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .menu-superior.on .menu-navegacao {
+        display: block;
+    }
+
+    .menu-superior.on .menu-navegacao li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-superior.on .menu-togle .dois {
+        opacity: 0;
+
+    }
+
+    .menu-superior.on .menu-togle .um {
+        transform: rotate(45deg) translate(5px, -8px);
+    }
+
+    .menu-superior.on .menu-togle .tres {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 1000px;
+        height: 300px;
+        align-items: center
+
+
+    }
+
+
 }
