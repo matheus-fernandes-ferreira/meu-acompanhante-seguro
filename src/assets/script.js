@@ -1,5 +1,5 @@
 let show = true;
-const menuContent = document.querySelector('.menu-superior');
+const menuContent = document.querySelector('sessao-nav');
 const menuTogle = menuContent.querySelector('.menu-togle');
 
 menuTogle.addEventListener('click', () => {
