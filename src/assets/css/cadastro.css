@@ -12,11 +12,10 @@ body {
 
 header {
   background-color: #1c486f;
-  padding: 20px;
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 60px;
+  height: 70px;
   border: solid green;
   align-items: center;
 }
@@ -72,7 +71,7 @@ nav ul li a {
   justify-content: space-between;
   width: 100vw;
   height: 1000px;
-  border: #ace43c solid;
+  border: #8d3ce4 solid;
 }
 
 #box-cadastro {
@@ -127,15 +126,11 @@ main {
 }
 
 .campo {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   border-color: #1C486F;
+  
 }
 
-.campo label {
-  display: block;
-  margin-bottom: 5px;
-  border-radius: 100px;
-}
 
 .campo input {
   width: 650px;
@@ -147,6 +142,7 @@ main {
 
 .botoes {
   text-align: center;
+  margin-top: 40px;
 }
 
 .botoes button {
