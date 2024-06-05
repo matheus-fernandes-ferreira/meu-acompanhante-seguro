@@ -1,13 +1,13 @@
 body {
   display: flex;
   flex-direction: column;
-  width: 1960x;
-  height: 1080px;
+  width: 100vw;
+  height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
   text-decoration: none;
+  align-items: center;
 }
 
 header {
@@ -15,7 +15,7 @@ header {
   padding: 20px;
   display: flex;
   flex-direction: row;
-  width: 97%;
+  width: 100%;
   height: 60px;
   border: solid green;
   align-items: center;
@@ -70,29 +70,19 @@ nav ul li a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-
+  width: 100vw;
+  height: 1000px;
+  border: #ace43c solid;
 }
 
 #box-cadastro {
-  border: solid 1px blue;
-  width: 980px;
-  height: 540px;
-  background-color: #1c486f;
-}
-
-#box-img {
   display: flex;
-  flex-direction: column;
-  border: solid 1px rgb(255, 0, 64);
-  width: 97%;
-  height: 540px;
-  background-color: #1c486f;
   align-items: center;
   justify-content: center;
-}
-
-#box-cadastro {
+  border: solid 1px blue;
+  width: 50%;
+  height: 100%;
+  background-color: #1c486f;
   background-image: url("/src/assets/imagem_cadastro/2.png");
   background-size: cover;
   background-position: center;
@@ -100,22 +90,34 @@ nav ul li a {
   color: #1C486F;
 }
 
+#box-img {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  background-color: #1c486f;
+  align-items: center;
+  justify-content: center;
+}
+
+
 main {
+  display: flex;
+  justify-content: center;
   padding: 20px;
 }
 
 .cadastro {
   display: flex;
   flex-direction: column;
-  width: 720 px;
+  width: 700px;
   height: 400px;
   background-color: #fff;
-  margin-top: 20px;
   padding: 30px;
   box-shadow: 0 2px 5px rgba(34, 0, 224, 0.1);
   border-top-right-radius: 100px;
-
-
+  border-color: #1c486f;
+  align-items: center;
 }
 
 .cadastro h1 {
@@ -126,6 +128,7 @@ main {
 
 .campo {
   margin-bottom: 15px;
+  border-color: #1C486F;
 }
 
 .campo label {
@@ -135,10 +138,11 @@ main {
 }
 
 .campo input {
-  width: 70%;
+  width: 650px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 50px;
+  border-color: #1C486F;
 }
 
 .botoes {
