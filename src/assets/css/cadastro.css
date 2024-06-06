@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -10,15 +10,83 @@ body {
   align-items: center;
 }
 
+
+/*Começo*/
 header {
-  background-color: #1c486f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1C486F;
+  width: 100%;
+  height: 90px;
+  
+}
+
+.nav {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 70px;
-  border: solid green;
-  align-items: center;
+  margin-left: 15px;
+  width: 100vw;
 }
+
+.logo {
+  width: 120px;
+  height: 60px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 60px;
+  margin-left: 20px;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.nav-list a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-list a:hover{
+  color: #ffe159;
+  text-decoration: none;
+}
+
+.area-acessibilidade {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  width: 300px;
+}
+
+.btn-accessibilidade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  border: none;
+  background: none;
+}
+
+.img-accessibilidade {
+  width: 50px;
+  height: 50px;
+  opacity: 50%;
+  transition: 0.1s ease-out;
+}
+
+.img-accessibilidade:hover {
+  width: 45px;
+  height: 45px;
+  opacity: 100%;
+  transition: 0.2s ease-in;
+  
+}
+
+/*Fim*/
+
 
 #box-img-superior-esquerdo {
   display: flex;
