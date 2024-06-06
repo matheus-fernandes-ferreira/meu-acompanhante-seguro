@@ -4,7 +4,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: red solid 5px;
 }
 
 /*Start cabecalho*/
@@ -16,35 +15,74 @@ a {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #1C486F;
     width: 100%;
-    height: 100px;
+    height: 90px;
     padding-inline: 16px;
-    border: #FFBD59 solid;
 }
 
-nav {
-    max-width: 1280px;
-    height: 60px;
-
+.nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    margin-left: 15px;
+    width: 100vw;
+}
 
-}
 .logo {
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 60px;
 }
+
 .nav-list {
     display: flex;
-    gap: 30px;
+    gap: 60px;
+    margin-left: 20px;
     list-style: none;
+    margin-top: 20px;
 }
 
 .nav-list a{
     color: #fff;
     text-decoration: none;
+}
+
+.nav-list a:hover{
+    color: #ffe159;
+    text-decoration: none;
+}
+
+.area-acessibilidade {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    width: 300px;
+}
+
+.btn-accessibilidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    border: none;
+    background: none;
+}
+
+.img-accessibilidade {
+    width: 50px;
+    height: 50px;
+    opacity: 50%;
+    transition: 0.1s ease-out;
+}
+
+.img-accessibilidade:hover {
+    width: 45px;
+    height: 45px;
+    opacity: 100%;
+    transition: 0.2s ease-in;
+    
 }
 
 .hamburger {
@@ -68,6 +106,38 @@ nav {
 }
 
 /*End cabecalho*/
+
+/*Start banner*/
+    .banner {
+        display: flex;
+        border: red solid;
+        width: 100%;
+        height: 670px;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+
+    #background-banner {
+        
+    }
+
+    .seja-bem-vindo-banner {
+        border: rgb(128, 255, 0) solid;
+    }
+
+    .logo-banner {
+        border: rgb(128, 255, 0) solid;
+    }
+
+    .texto-banner {
+        text-align: center;
+        width: 280px;
+        padding: 10px;
+    }
+
+
+/*End Banner*/
 
 main {
     border: rgb(255, 0, 255) solid 5px;
