@@ -1,12 +1,29 @@
 /*Web*/
 
+/*------Texto------*/
+/*Barra de navegação superior*/
+.nav-list a {
+    font-size: 20px;
+}
+
+/*Maior parte dos textos da pagina*/
+p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.titulo-acordeon-wb {
+    font-size: 20px;
+}
+/*------Texto-------*/
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/*Start cabecalho*/
+/*Comerço barra navegação*/
 a {
     text-decoration: none;
     color: #fff;
@@ -42,12 +59,12 @@ header {
     margin-top: 20px;
 }
 
-.nav-list a{
+.nav-list a {
     color: #fff;
     text-decoration: none;
 }
 
-.nav-list a:hover{
+.nav-list a:hover {
     color: #ffe159;
     text-decoration: none;
 }
@@ -82,82 +99,59 @@ header {
     height: 45px;
     opacity: 100%;
     transition: 0.2s ease-in;
-    
+
 }
 
 .hamburger {
     display: none;
-    border: none;
     background: none;
-    border-top: 3px solid #fff;
     cursor: pointer;
 }
 
-.hamburger::before,
-.hamburger::after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 3px;
-    background: #fff;
-    margin-top: 5px;
-    position: relative;
-    transition: 0.2s;
-}
+/*Fim barra navegação*/
 
-/*End cabecalho*/
-
-/*Start banner*/
-    .banner {
-        display: flex;
-        border: red solid;
-        width: 100%;
-        height: 670px;
-        justify-content: center;
-        align-items: center;
-        gap: 80px;
-    }
-
-    #background-banner {
-        
-    }
-
-    .seja-bem-vindo-banner {
-        border: rgb(128, 255, 0) solid;
-    }
-
-    .logo-banner {
-        border: rgb(128, 255, 0) solid;
-    }
-
-    .texto-banner {
-        text-align: center;
-        width: 280px;
-        padding: 10px;
-    }
-
-
-/*End Banner*/
-
-main {
-    border: rgb(255, 0, 255) solid 5px;
+/*Começo banner superior*/
+.banner {
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    border: red solid;
+    width: 100%;
+    height: 670px;
+    align-items: center;
+    justify-content: center;
 }
 
-p {
-    font-size: 25px;
-    font-weight: 500;
+#background-banner {}
+
+.seja-bem-vindo-banner {
+    border: rgb(128, 255, 0) solid;
+}
+
+.logo-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(128, 255, 0) solid;
+    width: 50%;
 }
 
 
+.texto-banner {
+    border: rgb(0, 255, 221) solid;
+    text-align: center;
+}
 
-/*Start alguma coisa*/
+div {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Fim Banner superior*/
+
+/*Começo botões web*/
 #acordeon {
     display: none;
 }
-
 
 #web-menu-acordeon {
     display: flex;
@@ -167,7 +161,6 @@ p {
     width: 100vw;
     background-color: #1C486F;
 }
-
 
 .botao-acordeon-wb {
     display: flex;
@@ -203,12 +196,10 @@ p {
     border-right: 90px solid transparent;
 }
 
-
 .icone-acordeon-wb {
     width: 60px;
     height: 60px;
 }
-
 
 .titulo-acordeon-wb {
     display: flex;
@@ -218,8 +209,57 @@ p {
     height: 40px;
     color: white;
 }
+/*Fim botões web*/
 
-/*End alguma coisa*/
+/*Começo menu expandido*/
+.area-expandida {
+    display: none;
+}
+
+.conteudo-area-expandida {
+    display: none;
+}
+
+.area-expandida.active {
+    background: #FBE8E8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #fc0505 solid;
+    width: 100%;
+    height: 1900px;
+}
+
+.conteudo-area {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    height: 20%;
+}
+
+.texto-expand {
+    display: flex;
+    text-align: center;
+    width: 35%;
+    flex-direction: column;
+}
+
+.video-orientacao iframe {
+    border: #1C486F solid;
+    margin-top: 50px;
+    width: 885px;
+    height: 500px;
+}
+
+/*Fim menu expandido*/
+
+main {
+    border: rgb(255, 0, 255) solid 5px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
 
 #informacao {
     display: flex;
@@ -236,6 +276,11 @@ p {
     text-align: center;
 }
 
+.bem-vindo h2 {
+    display: flex;
+    justify-content: center;
+}
+
 #info {
     border: red solid;
     display: flex;
@@ -244,14 +289,9 @@ p {
     align-items: center;
 }
 
+/*Fim Informações web*/
 
-
-.bem-vindo h2 {
-    display: flex;
-    justify-content: center;
-}
-
-/*Satart destaque web*/
+/*Commeço destaque web*/
 .nomedistaque {
     display: flex;
     flex-direction: row;
@@ -322,11 +362,10 @@ p {
     height: 280px;
 }
 
+/*Fim destaque web*/
 
-/*End destaque web*/
 
-
-/*Start rodape*/
+/*Começo rodape*/
 footer {
     display: flex;
     flex-direction: column;
@@ -337,11 +376,12 @@ footer {
 
 }
 
-
-/*End rodape*/
+/*Fim rodape*/
 
 /*Mobile*/
 @media only screen and (max-width: 428px) {
+
+    /*Config*/
     body {
         display: flex;
         flex-direction: column;
@@ -357,15 +397,55 @@ footer {
         list-style: none;
     }
 
-    /*area de teste*/
+    /*Config*/
 
-
-    /*ate aqui*/
-
-
-    /*Start menu superior*/
+    /*Commeço Hamburger*/
     .hamburger {
         display: block;
+        border: none;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 3px;
+        background: #fff;
+        margin-top: 5px;
+        position: relative;
+        transition: 0.2s;
+    }
+
+    .nav-active .hamburger {
+        position: relative;
+        top: 26px;
+        right: 18px;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -8px;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 70px;
+        left: -20px;
+        width: 100%;
+        height: 600px;
+        background: #1C486F;
+        clip-path: circle(100px at 100% -55%);
+        transition: 0.5s ease-in-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0px;
+        pointer-events: none;
     }
 
     .nav {
@@ -374,8 +454,7 @@ footer {
     }
 
     .nav-list a {
-        opacity: 0;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .nav-list li:nth-child(1) a {
@@ -390,20 +469,8 @@ footer {
         transition: 0.5s 0.6s;
     }
 
-    .nav-list {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vw;
-        background: #1C486F;
-        clip-path: circle(100px at 100% -55%);
-        transition: 0.5s ease-in-out;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
-        pointer-events: none;
+    .nav-list li:nth-child(4) a {
+        transition: 0.5s 0.8s;
     }
 
     .nav.active .nav-list {
@@ -414,31 +481,35 @@ footer {
         opacity: 1;
     }
 
-    .nav-active .hamburger {
-        position: fixed;
-        top: 26px;
-        right: 18px;
+    /*Fim Hamburger*/
+
+    /*Começo Banner superior*/
+    .banner {
+        display: none;
     }
 
-    .nav.active .hamburger::before {
-        transform: rotate(135deg);
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .nav.active .hamburger::after {
-        transform: rotate(-135deg);
-        top: -8px;
+    .logo-banner {
+        display: none;
     }
 
-    /*End menu superior*/
-
-    /*Start pagina principal*/
-    #pagina-principal {
-        border: red 1px solid;
-        height: 2500px;
+    .texto-banner {
+        display: none;
     }
 
-    #banner {}
+    div .seja-bem-vindo-banner img {
+        width: 100%;
+    }
 
+    /*Fim Banner superior*/
+
+    /*Começo Botoes acordeon*/
     #web-menu-acordeon {
         display: none;
     }
@@ -508,8 +579,13 @@ footer {
         height: 40px;
     }
 
-    /*End pagina principal*/
+    /*Fim Botoes acordeon*/
 
+    /*Começo Informmações*/
+    #pagina-principal {
+        border: red 1px solid;
+        height: 2500px;
+    }
 
     #informacao {
         display: flex;
@@ -545,7 +621,9 @@ footer {
         justify-content: center;
     }
 
-    /*Start destaque*/
+    /*Fim Informações*/
+
+    /*Começo destaque*/
     .nomedistaque {
         display: flex;
         flex-direction: row;
@@ -580,10 +658,10 @@ footer {
         font-size: small;
     }
 
-    /*end css destaque*/
+    /*Fim destaque*/
 
 
-    /*Start rodape*/
+    /*Começo rodape*/
     footer {
         background: #1C486F;
         border: 1px solid red;
@@ -591,6 +669,5 @@ footer {
 
     }
 
-    /*End rodape*/
-
+    /*Fim rodape*/
 }
