@@ -215,6 +215,9 @@ div {
 .area-expandida {
     display: none;
 }
+.area-expandida2 {
+    display: none;
+}
 
 .conteudo-area-expandida {
     display: none;
@@ -231,12 +234,24 @@ div {
     height: 1900px;
 }
 
+.area-expandida-protecao.active {
+    background: #FBE8E8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #fc0505 solid;
+    width: 100%;
+    height: 1900px;
+}
+
 .conteudo-area {
     display: flex;
     flex-direction: row;
     width: 75%;
     height: 20%;
 }
+
 
 .texto-expand {
     display: flex;
@@ -338,7 +353,7 @@ main {
 }
 
 #carrosel-destaque {
-    display: none;
+    display: flex;
 }
 
 .Banner-destaque {
