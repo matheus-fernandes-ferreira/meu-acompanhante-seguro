@@ -215,7 +215,15 @@ div {
 .area-expandida {
     display: none;
 }
-.area-expandida2 {
+.area-expandida-2 {
+    display: none;
+}
+
+.area-expandida-3 {
+    display: none;
+}
+
+.area-expandida-4 {
     display: none;
 }
 
@@ -234,8 +242,30 @@ div {
     height: 1900px;
 }
 
-.area-expandida-protecao.active {
-    background: #FBE8E8;
+.area-expandida-2.active {
+    background: #f20c0c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #fc0505 solid;
+    width: 100%;
+    height: 1900px;
+}
+
+.area-expandida-3.active {
+    background: #32f20c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #fc0505 solid;
+    width: 100%;
+    height: 1900px;
+}
+
+.area-expandida-4.active {
+    background: #2b349a;
     display: flex;
     flex-direction: column;
     align-items: center;
