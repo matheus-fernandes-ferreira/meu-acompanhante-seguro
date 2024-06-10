@@ -6,6 +6,7 @@
     box-sizing: border-box;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 html {
@@ -17,13 +18,13 @@ html {
 }
 
 
-/*Inicio da barra de navegação*/
 
 header {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1C486F;
+    background-color: #051e34;
     width: 100%;
     height: 90px;
     padding-left: 80px;
@@ -39,26 +40,22 @@ header {
 
 .logo {
     width: 120px;
-    height: 60px;
+    height: 70px;
 }
 
 .nav-list {
     display: flex;
     gap: 60px;
-    margin-left: 20px;
-    list-style: none;
-    margin-top: 20px;
+    align-items: center;
 }
 
 .nav-list a {
     font-size: 1.6rem;
     color: #fff;
-    text-decoration: none;
 }
 
 .nav-list a:hover {
     color: #ffe159;
-    text-decoration: none;
 }
 
 .area-acessibilidade {
@@ -101,10 +98,8 @@ header {
 
 
 
-/*Fim da barra de navegação*/
 
 
-/* Inicio pagina login*/
 .container-login {
     display: flex;
     flex-direction: row;
@@ -112,7 +107,6 @@ header {
     height: 100vh;
 
 }
-
 
 .box-img {
     width: 70vw;
@@ -128,12 +122,15 @@ header {
     color: white;
     font-size: 5rem;
     margin-left: 150px;
-    margin-top: 250px;
+    margin-top: 200px;
+    font-weight: lighter;
+
 }
 
 .box-img>h1>span {
     font-weight: 900;
 }
+
 
 .box-side-bar {
     width: 30%;
@@ -143,7 +140,7 @@ header {
 
 .box-login {
     width: 410px;
-    height: 600px;
+    height: 75%;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -183,7 +180,7 @@ header {
     height: auto;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 75px;
     font-size: 1rem;
 }
 
@@ -207,7 +204,7 @@ header {
 .box-btn {
     width: 110px;
     height: 75px;
-    margin-top: 100px;
+    margin-top: 20%;
 
 }
 
@@ -232,18 +229,101 @@ header {
 
 
 
-@media (max-width: 975px) {
+@media (max-width: 1020px) {
+    header {
+        height: 70px;
+    }
+
+    .box-img>h1 {
+        margin-left: 80px;
+        font-size: 4rem;
+    }
+
+    .container-credenciais {
+        padding-top: 55px;
+    }
+}
+
+@media (max-width: 978px) {
+    .nav-list a {
+        font-size: 1.1rem;
+    }
+
+    header {
+        padding-right: 50px;
+    }
+
+    .nav-list {
+        gap: 40px;
+    }
+
+}
+
+
+@media(max-width: 831px) {
+    .box-img>h1 {
+        margin-left: 30px;
+        margin-top: 130px;
+        font-size: 3rem;
+    }
+
+    .box-login {
+        width: 310px;
+        height: 65%;
+    }
+
+    .box-login>h1 {
+        padding-top: 70px;
+        font-size: 3rem;
+    }
+
+    .box-form {
+        width: 80%;
+    }
+
+    .container-credenciais {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    #username {
+        width: 270px;
+    }
+
+    #password {
+        width: 270px;
+    }
+
+    .box-btn {
+        width: 90px;
+    }
+
+    #btn-entrar {
+        width: 90px;
+        height: 75px;
+    }
+
+    .label-login {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media(max-width: 595px) {
+    header {
+        padding-left: 15px;
+    }
+
     .container-login {
         display: flex;
         flex-direction: row;
         width: 100v;
         height: 100vh;
-    
+
     }
-    
-    
+
     .box-img {
-        width: 70vw;
+        width: 90vw;
         height: 100vh;
         display: flex;
         background-image: linear-gradient(rgba(28, 72, 111, 0.8), rgba(28, 72, 111, 0.8)), url(../imagens/sorrindo-coroa.png);
@@ -251,110 +331,99 @@ header {
         background-size: cover;
         background-repeat: no-repeat;
     }
-    
+
     .box-img>h1 {
-        color: white;
-        font-size: 4rem;
-        margin-left: 150px;
-        margin-top: 60px;
-        justify-content: center;
+        font-size: 3rem;
+        margin-left: 30px;
+        margin-top: 100px;
+        font-weight: lighter;
+
     }
-    
-    .box-img>h1>span {
-        font-weight: 900;
-    }
-    
+
+
+
     .box-side-bar {
-        width: 30%;
+        width: 10%;
         height: 100%;
         background-color: #FFBD59;
     }
-    
+
     .box-login {
-        width: 410px;
-        height: 600px;
-        display: flex;
-        flex-direction: column;
+        width: 310px;
+        height: 65%;
         position: absolute;
         /* Habilita posicionamento absoluto */
-        top: 55%;
+        top: 100%;
         /* Posiciona verticalmente em 50% */
-        left: 50%;
+        left: 73%;
+        /* Posiciona horizontalmente em 50% */
+        transform: translate(-100%, -100%);
         /* Centraliza a div */
         background-color: white;
         border-top-right-radius: 200px;
     }
-    
+
     .box-login>h1 {
         letter-spacing: 1px;
-        padding-top: 100px;
+        padding-top: 60px;
         padding-left: 40px;
-        font-size: 3.5rem;
-    
+        font-size: 3rem;
+
     }
-    
-    .box-form {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        padding-left: 40px;
-        padding-right: 40px;
-        align-items: center;
-    }
-    
+
+
     .container-credenciais {
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-        padding-top: 100px;
+        padding-top: 55px;
         font-size: 1rem;
     }
-    
+
     #username {
-        width: 300px;
-        height: 30px;
-        border-radius: 100px;
-        border: 1px solid #1C486F;
-        padding: 10px;
+        width: 230px;
     }
-    
+
     #password {
-        width: 300px;
-        height: 30px;
-        border-radius: 100px;
-        border: 1px solid #1C486F;
-        padding: 10px;
-    
+        width: 230px;
     }
-    
+
     .box-btn {
         width: 110px;
         height: 75px;
-        margin-top: 100px;
-    
+        margin-top: 20%;
+
     }
-    
+
     #btn-entrar {
-        width: 110px;
-        height: 75px;
+        width: 60px;
+        height: 50px;
         border: none;
         border-radius: 20px;
-        background-color: #FFBD59;
-        background-image: url(../icones/entrar-branco.png);
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
+
     }
-    
+
     .label-login {
         font-size: 1.5rem;
         padding: 10px;
     }
 
 
+}
+
+
+@media (max-width:478px) {
+    .box-login {
+        width: 478px;
+        height: 65%;
+        position: absolute;
+        /* Habilita posicionamento absoluto */
+        top: 100%;
+        /* Posiciona verticalmente em 50% */
+        left: 73%;
+        /* Posiciona horizontalmente em 50% */
+        transform: translate(-100%, -100%);
+        /* Centraliza a div */
+        background-color: white;
+        border-top-right-radius: 200px;
+    }
 
 }
