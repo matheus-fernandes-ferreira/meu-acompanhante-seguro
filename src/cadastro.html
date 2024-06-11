@@ -18,15 +18,37 @@
                 <li><a href="">Quem Somos</a></li>
                 <li><a href="">Notícias</a></li>
                 <li><a href="">Contato</a></li>
+            
+               
             </ul>
         </nav>
 
         <div class="area-acessibilidade">
+            
+            <ul class="nav-list">
+                <li><a href="">Entrar</a></li>
+               
+            </ul>
+
+
+
             <button class="btn-accessibilidade" title="Configurações de acessibilidade">
                 <img class="img-accessibilidade" src="../src/assets/imagem_cadastro/acessibilidade.png" alt="Acessibilidade" title="Menu Acessibilidade">
             </button>
         </div>
     </header>
+   
+   <!--Começo Menu flutuante-->
+   <span class="menu-acessibilidade">
+        
+    <div class="botoes-acessibilidade-menu">
+        <button id="aumentar-texto"onclick="ola()">Aumentar Texto</button>
+        <button id="dark-mode-toggle">Alternar Modo</button>
+</div>
+</span>
+<!--Fim menu flutuante-->
+
+   
     <!--Fim cabeçalho-->
 
                   <!--começa corpo-->
@@ -72,10 +94,13 @@
         </div>
     </div>
 
-    <button id="dark-mode-toggle">Alternar Modo</button>
+
+        
      <script src="./assets/cadastro_js/modo_escuro.js"></script>
-    
-   
+
+     <script src="./assets/cadastro_js/menu_acessibilidade.js" ></script>
+
+
 
 </body>
 </html>
