@@ -1,141 +1,185 @@
+
 * {
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 html {
+    width: 100vw;
+    height: 100vh;
     font-size: 62.5%;
     color: #1C486F;
-    width: 100vw;
-    height: 100vh;
+    overflow-x: hidden;
 }
 
-.sessao-nav {
+
+
+header {
+    /* position: fixed; */
     display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 70px;
-    background-color: #1C486F;
-}
-
-.logo-img {
-
-    width: 80px;
-    height: 70px;
-}
-
-.sessao-nav>ul {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    padding-left: 50px;
-
-}
-
-.sessao-nav li {
-    display: flex;
-    flex-direction: row;
-    padding-right: 20px;
-}
-
-.sessao-nav li a {
-    color: white;
-}
-
-
-
-.sobre-nos {
-    display: flex;
-    flex-direction: column;
-}
-
-.sobre-nos h1 {
-    padding: 50px 50px 5px 50px;
-    font-size: 3rem;
-}
-
-.content-sobre-nos {
-    display: flex;
-    flex-direction: row;
-    padding-top: 5px;
-}
-
-
-.text-sobre-nos {
-    width: 50%;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.text-sobre-nos p {
-    font-size: 1.5rem;
-    padding-top: 5px;
-    line-height: 5;
-}
-
-.img-sobre-nos {
-    width: 50%;
-    height: 100vh;
-    background-image: url('../Imagens_projeto/7.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-
-}
-
-
-
-
-
-
-.sec-destaques {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.destaques {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* Defines 4 columns of equal width */
-    gap: 20px;
-    width: 80vw;
-    height: 100vh;
-
-}
-
-.titulo-destaque {
+    justify-content: space-between;
+    background-color: #051e34;
     width: 100%;
-    height: 3rem;
-    background-color: #E8C25F;
+    height: 90px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    width: 100vw;
+}
+
+.logo {
+    width: 120px;
+    height: 70px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.nav-list a {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.nav-list a:hover {
+    color: #ffe159;
+}
+
+.area-acessibilidade {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    width: 300px;
+}
+
+.btn-accessibilidade {
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    border: none;
+    background: none;
 }
 
-..destaques>h1 {
-    font-size: 5rem;
+.img-accessibilidade {
+    width: 50px;
+    height: 50px;
+    opacity: 100%;
+    transition: 0.1s ease-out;
 }
 
-.destaque-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 300px;
-    border: 2px solid black;
+.img-accessibilidade:hover {
+    width: 45px;
+    height: 45px;
+    opacity: 50%;
+    transition: 0.2s ease-in;
 }
 
-.img-destaque {
-    width: 100%;
-    height: 80%;
-    background-color: black;
+
+.ler-button{
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-weight: 700;
+    background-color: #051e34;
 }
 
-.texto-destaque {
-    width: 100%;
-    height: 40%;
-    background-color: #d3d3d3;
+
+
+
+
+.sec-sobre-nos{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content-sobre-nos{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 100vw;
+	height: 100vh;
+	padding: 50px;
+}
+
+
+.main-SN{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 85vw;
+
+}
+.content-sobre-nos h1{
+	font-size: 3rem;
+	padding: 20px;
+}
+
+
+.texto-SN{
+	width: 50%;
+	padding-right: 50px;
+}
+.texto-SN p{
+	font-size: 2rem;
+	text-align: justify;
+ 	 line-height: 1.5em;
+}
+
+.texto2-SN{
+	width: 85%;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 5px;
+
+}
+.texto2-SN p{
+	font-size: 2rem;
+	text-align: justify;
+ 	 line-height: 1.5em;
+
+}
+
+
+
+.img-SN{
+	width: 50%;
+}
+#fig-dev{
+	width: 90%;
+}
+
+.pessoas{
+	padding-top: 50px;
+	display: grid;
+	 grid-template-columns: repeat(4, 1fr); /* Defines 4 columns of equal width */
+ 	 gap: 20px;
+	width: 80vw;
+	height: 50vh;
+
+}
+.pessoas-content{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 250px;
+	border: 5px solid black;
 }
