@@ -1,7 +1,9 @@
-let fontSize = 16; // Tamanho de fonte padrão
+let fontSize = 16; 
+const maxFontSize = 24; 
 
 function aumentarTexto() {
-    fontSize += 2; // Aumenta o tamanho da fonte em 2px
-    document.documentElement.style.fontSize = fontSize + "px"; // Aplica o novo tamanho de fonte ao elemento root
+    if (fontSize < maxFontSize) {
+        fontSize += 2; // 
+        document.documentElement.style.fontSize = fontSize + "px";
+    }
 }
-
