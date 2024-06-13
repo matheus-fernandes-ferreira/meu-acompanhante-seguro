@@ -1,16 +1,29 @@
-// // Seleciona todos os botões de leitura
-// const botoesLer = document.querySelectorAll('.ler-button');
+//============================================
+//Script paratrocar o botao play -> Stop
+let show = true;
+const botaoPlay = document.querySelector('.ler-button');
 
-// // Adiciona evento de clique a cada botão
-// botoesLer.forEach(botao => {
-//     botao.addEventListener('click', () => {
-//         const texto = botao.parentElement.textContent.replace('Ler em Voz Alta', '').trim(); // Obtém o texto do elemento pai do botão
-//         const utterance = new SpeechSynthesisUtterance(texto); // Cria objeto SpeechSynthesisUtterance
-//         speechSynthesis.speak(utterance); // Inicia a leitura do texto
-//     });
-// });
+botaoPlay.addEventListener('click', () => {
+  botaoPlay.classList.toggle('on', show)
+  show = !show
+})
 
+//============================================
+//Script para adicionar a funcionalidade do botao de acessibilidade
+let ligar = true;
+const acessibilidade = document.querySelector('.btn-leitor-de-texto');
+const trilho = document.querySelector('.trilho');
+const botaoplay = document.querySelector('.ler-button');
 
+acessibilidade.addEventListener('click', () => {
+  botaoplay.classList.toggle('play', ligar)
+  acessibilidade.classList.toggle('play', ligar)
+  trilho.classList.toggle('play', ligar)
+  ligar = !ligar
+})
+
+//============================================
+//Script para ler os textos da página
 // Seleciona todos os botões de leitura
 const botoesLer = document.querySelectorAll('.ler-button');
 
@@ -19,17 +32,18 @@ botoesLer.forEach(botao => {
   botao.addEventListener('click', () => {
     const textoElement = botao.parentElement;
     const isReading = textoElement.dataset.reading === 'true';
-    const texto = textoElement.textContent.replace('Ler em Voz Alta', '').trim();
+    const texto = textoElement.textContent.replace('', '').trim();
 
     if (isReading) {
       speechSynthesis.cancel(); // Para a leitura atual
       textoElement.dataset.reading = 'false';
-      botao.textContent = 'Ler em Voz Alta';
+      // botao.textContent = 'Ler em Voz Alta';
     } else {
       const utterance = new SpeechSynthesisUtterance(texto);
       speechSynthesis.speak(utterance);
       textoElement.dataset.reading = 'true';
-      botao.textContent = 'Parar Leitura';
+      // botao.textContent = 'Parar Leitura';
     }
   });
 });
+

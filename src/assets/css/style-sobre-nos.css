@@ -1,4 +1,3 @@
-
 * {
     margin: 0px;
     padding: 0px;
@@ -92,93 +91,155 @@ header {
 }
 
 
-.ler-button{
-    width: 200px;
-    height: 50px;
-    color: white;
-    font-weight: 700;
-    background-color: #051e34;
+/* trilho para menu de acessibilidade */
+.trilho {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    height: 30px;
+    background-color: #1a3953;
+    border-radius: 30px;
+    border: 1px solid #202020;
+    position: relative;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+/* botão para clicar e ativar a opção de acessibilidade */
+.btn-leitor-de-texto {
+    width: 30px;
+    height: 30px;
+    transform: scale(0.9);
+    background-color: #efefef;
+    border: 1px solid #202020;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transition: 500ms;
+    cursor: pointer;
+}
+/* quando o botão da opção de acessbilidade é clicado */
+.btn-leitor-de-texto.play {
+    left: 30px;
+    background-color: #f3f2f2;
+}
+/* alterações no trilho quando o botao é clicado */
+.trilho.play {
+    background-color: #ffe159;
+}
+
+/* botao play  - por padrão ele não é exibido*/
+.ler-button {
+    box-sizing: border-box;
+    height: 74px;
+    border-color: transparent transparent transparent #202020;
+    transition: 100ms all ease;
+    will-change: border-width;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 37px 0 37px 60px;
+    background-color: transparent;
+    display: none;
+}
+/* botão play quando clicado se torna visivel */
+.ler-button.play {
+    display: block;
+}
+
+/* botao play quando for clicado  vira o stop*/
+.ler-button.on {
+    width: 74px;
+    height: 74px;
+    border-style: solid;
+    border-width: 27px;
+    border-color: transparent;
+    background-color: #202020;
+    transition: 400ms;
 }
 
 
 
-
-
-.sec-sobre-nos{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+/* Estilos do layout da página */
+.sec-sobre-nos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.content-sobre-nos{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100vw;
-	height: 100vh;
-	padding: 50px;
-}
-
-
-.main-SN{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 85vw;
-}
-
-.titulo-SN{
-	font-size: 3rem;
-	padding: 20px;
+.content-sobre-nos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
 }
 
 
-.texto-SN{
-	width: 50%;
-	padding-right: 50px;
-}
-.texto-SN p{
-	font-size: 2rem;
-	text-align: justify;
- 	 line-height: 1.5em;
+.main-SN {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85vw;
 }
 
-.texto2-SN{
-	width: 85%;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top: 5px;
-
-}
-.texto2-SN p{
-	font-size: 2rem;
-	text-align: justify;
- 	 line-height: 1.5em;
-
+.titulo-SN {
+    font-size: 3rem;
+    padding: 20px;
 }
 
 
-
-.img-SN{
-	width: 50%;
-}
-#fig-dev{
-	width: 90%;
+.texto-SN {
+    width: 50%;
+    padding-right: 50px;
 }
 
-.pessoas{
-	padding-top: 50px;
-	display: grid;
-	 grid-template-columns: repeat(4, 1fr); /* Defines 4 columns of equal width */
- 	 gap: 20px;
-	width: 80vw;
-	height: 50vh;
+.texto-SN p {
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.texto2-SN {
+    width: 85%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
 
 }
-.pessoas-content{
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 250px;
-	border: 5px solid black;
+
+.texto2-SN p {
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 1.5em;
+
+}
+
+
+
+.img-SN {
+    width: 50%;
+}
+
+#fig-dev {
+    width: 90%;
+}
+
+.pessoas {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Defines 4 columns of equal width */
+    gap: 20px;
+    width: 80vw;
+    height: 50vh;
+
+}
+
+.pessoas-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    border: 5px solid black;
 }
