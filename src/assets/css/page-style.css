@@ -1,4 +1,27 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    vertical-align:baseline;
+    }
+
 /*Web*/
+
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #163958;    
+  }
+
+
 
 /*------Texto------*/
 /*Barra de navegação superior*/
@@ -75,19 +98,20 @@ header {
 
 .area-acessibilidade {
     display: flex;
+    gap: 30px;
     justify-content: flex-end;
-    padding-right: 15px;
     width: 300px;
 }
 
 .btn-accessibilidade {
     display: flex;
+    padding: 20px;
     justify-content: center;
     align-items: center;
     width: 55px;
     height: 55px;
     border-radius: 100%;
-    border: none;
+   border: none;
     background: none;
 }
 
@@ -151,9 +175,8 @@ header {
     height: 670px;
     align-items: center;
     justify-content: center;
+    background: url(../Imagens_projeto/6.svg) no-repeat center;
 }
-
-#background-banner {}
 
 
 
@@ -200,7 +223,7 @@ header {
     justify-content: center;
     gap: 5%;
     height: 150px;
-    width: 100vw;
+    width: 100%;
     background-color: #1C486F;
 }
 
@@ -388,7 +411,6 @@ header {
 /*Fim menu expandido*/
 
 main {
-    border: rgb(255, 0, 255) solid 5px;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -398,7 +420,6 @@ main {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    border: 1px rgb(0, 132, 255) solid;
 }
 
 .bem-vindo {
@@ -415,7 +436,6 @@ main {
 }
 
 #info {
-    border: red solid;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -475,7 +495,6 @@ main {
 }
 
 .Banner-destaque {
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -497,13 +516,28 @@ main {
 
 /*Fim destaque web*/
 
+/*Começo Darkmode*/
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+
+/*Fim Darkmode*/
 
 /*Começo rodape*/
 footer {
     display: flex;
     flex-direction: column;
     background: #1C486F;
-    border: 1px solid red;
     height: 450px;
     width: 100%;
 
@@ -532,6 +566,8 @@ footer {
 
     /*Config*/
 
+
+
     .menu-acessibilidade.active {
         display: none;
         
@@ -542,12 +578,12 @@ footer {
         position: absolute;
         justify-content: center;
         align-items: center;
-        right: 3.5%;
-        top: 68%;
-        width: 350px;
+        top: 60%;
+        width: 90vw;
+        margin: 0px;
         height: 200px;
-        background: #1C486F;
-        border-radius: 5px;
+        background: #ffffff;
+        border-radius: 15px;
         transition: 0.2s ease-in;
         pointer-events: none;
     }
@@ -558,20 +594,14 @@ footer {
     /*Começo Hamburger*/
     .hamburger {
         display: block;
+        padding: 5px;
         border: none;
     }
-
-    .hamburger::before,
-    .hamburger::after {
-        content: "";
-        display: block;
-        width: 20px;
-        height: 3px;
-        background: #fff;
-        margin-top: 5px;
-        position: relative;
-        transition: 0.2s;
+    .img-hamburger{
+        width: 30px;
+        height: 30px;
     }
+   
 
     .nav-active .hamburger {
         position: relative;
@@ -590,17 +620,20 @@ footer {
 
     .nav-list {
         position: absolute;
-        justify-content: center;
-        right: 0%;
-        top: 70px;
-        width: 100%;
+        display: flex;
+        right: 0px;
+        top: 69px;
+        width: 200px;
         height: 350px;
         background: #1C486F;
         clip-path: circle(100px at 100% -55%);
         transition: 0.5s ease-in-out;
+        padding: 10%;
+        justify-content: center;
+        text-align: center;
         flex-direction: column;
-        align-items: center;
         pointer-events: none;
+        border-bottom-left-radius: 25px;
     }
 
     .nav-list a {
@@ -624,7 +657,7 @@ footer {
     }
 
     .nav.active .nav-list {
-        clip-path: circle(1200px at 90% -15%);
+        clip-path: circle(450px at 90% -15%);
     }
 
     .nav.active .nav-list a {
@@ -753,7 +786,6 @@ footer {
 
     /*Começo Informmações*/
     #pagina-principal {
-        border: red 1px solid;
         height: 2500px;
     }
 
@@ -761,7 +793,6 @@ footer {
         display: flex;
         flex-direction: column;
         padding: 10px;
-        border: 1px rgb(0, 132, 255) solid;
     }
 
     #info {
@@ -774,12 +805,13 @@ footer {
     }
 
     #img1 {
-        border: 1px solid red;
+        border: 1px solid rgb(255, 0, 204);
         height: 200px;
     }
 
     .bem-vindo {
-        border: 1px red solid;
+        padding: 5px;
+        margin-bottom: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;

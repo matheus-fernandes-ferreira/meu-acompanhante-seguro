@@ -19,10 +19,6 @@ botoesDoAcordeoon3.addEventListener("click", () =>
 botoesDoAcordeoon4.addEventListener("click", () =>
     area4.classList.toggle("active"));
 
-function test(){
-    console.log("ola eduanea!");
-}
-
 
 var acc = document.getElementsByClassName("acordeon-mobile");
 var i;
