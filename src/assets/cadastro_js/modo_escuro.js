@@ -1,17 +1,17 @@
 
-const supportsDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const supportsDarkMode = window.matches;
     
 function enableDarkMode() {
-    document.body.classList.add('box-cadastro');
+    document.body.classList.add('dark');
 }
 
 // Função para desativar o modo escuro
 function disableDarkMode() {
-    document.body.classList.remove('box-cadastro');
+    document.body.classList.remove('dark');
 }
 
 function toggleDarkMode() {
-    if (document.body.classList.contains('box-cadastro')) {
+    if (document.body.classList.contains('dark')) {
         disableDarkMode();
     } else {
         enableDarkMode();
