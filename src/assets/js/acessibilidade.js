@@ -12,3 +12,4 @@ acessibilidade.addEventListener("click", () =>
 function ola(){
     console.log('Eu aumento o texto');
 }
+

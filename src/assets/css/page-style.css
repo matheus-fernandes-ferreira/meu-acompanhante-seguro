@@ -7,6 +7,71 @@
 
 /*Web*/
 
+/* trilho para menu de acessibilidade */
+.trilho {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    height: 30px;
+    background-color: #1a3953;
+    border-radius: 30px;
+    border: 1px solid #202020;
+    position: relative;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+/* botão para clicar e ativar a opção de acessibilidade */
+.btn-leitor-de-texto {
+    width: 30px;
+    height: 30px;
+    transform: scale(0.9);
+    background-color: #efefef;
+    border: 1px solid #202020;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transition: 500ms;
+    cursor: pointer;
+}
+/* quando o botão da opção de acessbilidade é clicado */
+.btn-leitor-de-texto.play {
+    left: 30px;
+    background-color: #f3f2f2;
+}
+/* alterações no trilho quando o botao é clicado */
+.trilho.play {
+    background-color: #ffe159;
+}
+
+/* botao play  - por padrão ele não é exibido*/
+.ler-button {
+    box-sizing: border-box;
+    height: 74px;
+    border-color: transparent transparent transparent #202020;
+    transition: 100ms all ease;
+    will-change: border-width;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 37px 0 37px 60px;
+    background-color: transparent;
+    display: none;
+}
+/* botão play quando clicado se torna visivel */
+.ler-button.play {
+    display: block;
+}
+
+/* botao play quando for clicado  vira o stop*/
+.ler-button.on {
+    width: 74px;
+    height: 74px;
+    border-style: solid;
+    border-width: 27px;
+    border-color: transparent;
+    background-color: #202020;
+    transition: 400ms;
+}
 
 
 body::-webkit-scrollbar {

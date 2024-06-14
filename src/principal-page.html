@@ -13,6 +13,7 @@
     <script defer src="../src/assets/js/acordeon.js"></script>
     <script defer src="../src/assets/js/acessibilidade.js"></script>
     <script defer src="../src/assets/js/darkmode.js"></script>
+
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     <header>
         <img class="logo" src="../src/assets/Icones_projeto/24.png" alt="logo aqui">
         <nav class="nav">
-            
+
             <ul class="nav-list">
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Quem Somos</a></li>
@@ -44,6 +45,11 @@
     <span class="menu-acessibilidade">
 
         <div class="botoes-acessibilidade-menu">
+            <!--Botão do trilho-->
+            <div class="trilho">
+                <button class="btn-leitor-de-texto"></button>
+            </div>
+
             <button id="aumentar-texto" onclick="ola()">Aumentar Texto</button>
             <button id="darkmode">Modo Escuro</button>
         </div>
@@ -534,6 +540,13 @@
         </section>
         <!------------------------------------Termino Destaque---------------------------------------------->
     </main>
+
+
+    <!--Precisa dessa parte por algum motivo-->
+    <div class='texto2-SN' data-reading="false">
+        <button class="ler-button"> </button>
+    </div>
+    <script src="../src/assets/js/leitor.js"></script>
 </body>
 <!------------------------------------Inicio rodape---------------------------------------------->
 <footer>
