@@ -1,0 +1,78 @@
+
+#darktg {
+    margin: 0;
+    width: 50px;
+    height: 20px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), 
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4 );
+    cursor: pointer;
+    transition: 1s;
+}
+
+#darktg:after{
+    content: " ";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: linear-gradient(180deg, #777, #3a3a3a);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+    background-image: url('/src/assets/imagens/moon-svgrepo-com.svg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#darkmode{
+    width: 0;
+    height: 0;
+    visibility: hidden
+}
+
+#darkmode:checked + #darktg {
+    background: #fff #3a3a3a;
+}
+
+#darkmode:checked + #darktg:after{
+    left: 47px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    background-image: url('/src/assets/imagens/sun-svgrepo-com.svg');
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+#darktg:active:after{
+    width: 10px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/*SVG MOON*/
+/* <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> */
+
+
+
+/*SVG SUN*/
+/* <?xml version="1.0" encoding="utf-8"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Environment / Sun">
+<path id="Vector" d="M12 4V2M12 20V22M6.41421 6.41421L5 5M17.728 17.728L19.1422 19.1422M4 12H2M20 12H22M17.7285 6.41421L19.1427 5M6.4147 17.728L5.00049 19.1422M12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg> */
