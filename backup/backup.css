@@ -32,6 +32,7 @@
 
 .dark #box-cadastro {
   background: linear-gradient(rgb(19, 41, 61), rgba(0, 0, 0, 0.9)), url("/src/assets/imagem_cadastro/2.png") no-repeat center center;
+  color: #f0e9e9;
 }
 
 .dark .nav-list {
