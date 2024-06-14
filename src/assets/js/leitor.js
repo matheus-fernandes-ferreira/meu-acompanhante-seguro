@@ -17,7 +17,7 @@ const botaoplay = document.querySelector('.ler-button');
 
 acessibilidadeBtn.addEventListener('click', () => {
   botaoplay.classList.toggle('play', ligar)
-  acessibilidade.classList.toggle('play', ligar)
+  acessibilidadeBtn.classList.toggle('play', ligar)
   trilho.classList.toggle('play', ligar)
   ligar = !ligar
 })
