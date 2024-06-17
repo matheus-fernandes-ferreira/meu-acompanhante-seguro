@@ -128,10 +128,20 @@ header {
     background-color: #ffe159;
 }
 
+.container-botao-ler{
+    display: flex;
+    background-color: red;
+    transform: scale(0.5);
+    border-radius: 100%;
+
+}
+
+
+
 /* botao play  - por padrão ele não é exibido*/
 .ler-button {
     box-sizing: border-box;
-    height: 74px;
+    height: 50px;
     border-color: transparent transparent transparent #202020;
     transition: 100ms all ease;
     will-change: border-width;
@@ -148,8 +158,8 @@ header {
 
 /* botao play quando for clicado  vira o stop*/
 .ler-button.on {
-    width: 74px;
-    height: 74px;
+    width: 50px;
+    height: 50px;
     border-style: solid;
     border-width: 27px;
     border-color: transparent;
@@ -172,7 +182,7 @@ header {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    padding: 50px;
+    padding: 5px;
 }
 
 
@@ -220,9 +230,19 @@ header {
 .img-SN {
     width: 50%;
 }
+.img-SN img {
+    width: 100%;
+    height: 100%;
+}
 
 #fig-dev {
     width: 90%;
+}
+
+
+.container-pessoas{
+    display: flex;
+    justify-content: center;
 }
 
 .pessoas {
@@ -239,7 +259,7 @@ header {
 .pessoas-content {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 85%;
     height: 250px;
     border: 5px solid black;
 }
