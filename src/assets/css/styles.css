@@ -1,0 +1,369 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    vertical-align:baseline;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    
+
+    /*--------------------------------------Barra de navegação-----------------------------------*/
+    /*Comerço barra navegação*/
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C486F;
+    width: 100%;
+    height: 90px;
+    padding-inline: 16px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    width: 100vw;
+}
+
+.logo {
+    width: 120px;
+    height: 60px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 60px;
+    margin-left: 20px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    color: #ffe159;
+    text-decoration: none;
+}
+
+.area-acessibilidade {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    width: 300px;
+}
+
+.btn-accessibilidade {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+   border: none;
+    background: none;
+}
+
+.img-accessibilidade {
+    width: 50px;
+    height: 50px;
+    opacity: 50%;
+    transition: 0.1s ease-out;
+}
+
+.img-accessibilidade:hover {
+    width: 45px;
+    height: 45px;
+    opacity: 100%;
+    transition: 0.2s ease-in;
+
+}
+
+/*Começo Menu flutuante*/
+.botoes-acessibilidade-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: red solid;
+    width: 300px;
+    height: 200px;
+}
+
+
+.botoes-acessibilidade-menu.active {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    pointer-events: fill;
+}
+
+
+
+.menu-acessibilidade.active {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 1%;
+    top: 12%;
+    width: 350px;
+    height: 240px;
+    background: #1C486F;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+    pointer-events: none;
+}
+/*Fim Menu flutuante*/
+.hamburger {
+    display: none;
+    background: none;
+    cursor: pointer;
+}
+
+/*Fim barra navegação*/
+    /*--------------------------------------Barra de navegação-----------------------------------*/
+
+   /*Começo Menu flutuante*/
+.botoes-acessibilidade-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: red solid;
+    width: 300px;
+    height: 200px;
+}
+
+
+.botoes-acessibilidade-menu.active {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    pointer-events: fill;
+}
+
+
+
+.menu-acessibilidade.active {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 1%;
+    top: 12%;
+    width: 350px;
+    height: 240px;
+    background: #1C486F;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+    pointer-events: none;
+}
+/*Fim Menu flutuante*/
+
+/*Começo banner superior*/
+.banner {
+    display: flex;
+    width: 100%;
+    height: 670px;
+    align-items: center;
+    justify-content: center;
+    background: url(../Imagens_projeto/6.svg) no-repeat center;
+}
+
+
+
+
+.logo-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 40px;
+}
+
+
+.texto-banner {
+    background-color: #1C486F;
+    color: #FBE8E8;
+    width: 450px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+
+.container-banner {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Fim Banner superior*/
+
+/*Botoes acordeon*/
+
+html {
+    font-size: 16px;
+    color: #1C486F;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.sessao-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 70px;
+    background-color: #051e34;
+}
+
+.logo-img {
+
+    width: 80px;
+    height: 70px;
+}
+
+.sessao-nav>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.sessao-nav li {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+}
+
+.sessao-nav li a {
+    color: white;
+}
+
+.banner-top {
+    width: 100vw;
+    height: 70vh;
+    border: 5px solid blue;
+}
+
+.banner-bck {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.parte-logo {
+    width: 30%;
+    height: 100%;
+    border: 5px solid red;
+}
+
+.sec-menu-content{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.botoes-acordeon {
+    width: 100vw;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Define 4 colunas de larguras iguais */
+    gap: 1px;
+}
+
+.btn-menu {
+    border: none;
+    background-color: #1C486F;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.btn-menu:hover {
+    background-color: #FFBD59;
+    color: #1C486F;
+
+}
+
+
+
+
+.container-content {
+    display: none;
+    transition: 500ms;
+
+}
+
+.container-content.ativo {
+    display: block;
+}
+
+#bota-um {
+    background-color: blue;
+}
+
+#bota-dois {
+    background-color: rgb(251, 255, 3);
+}
+
+#bota-tres {
+    background-color: rgb(255, 24, 143);
+}
+
+#bota-quatro {
+    background-color: rgb(175, 39, 26);
+}
+
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+}
+
+
+.menu-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    text-align: center;
+}

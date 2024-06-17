@@ -1,36 +1,30 @@
-const botoesDoAcordeoon1 = document.querySelector(".botao-higienizacao");
-const botoesDoAcordeoon2 = document.querySelector(".botao-protecao");
-const botoesDoAcordeoon3 = document.querySelector(".botao-contaminacao");
-const botoesDoAcordeoon4 = document.querySelector(".botao-leia-mais");
-const area = document.querySelector(".area-expandida");
-const area2 = document.querySelector(".area-expandida-2");
-const area3 = document.querySelector(".area-expandida-3");
-const area4 = document.querySelector(".area-expandida-4");
 
-botoesDoAcordeoon1.addEventListener("click", () =>
-    area.classList.toggle("active"));
+const botoesAcordeon = document.querySelectorAll('.btn-menu');
+const conteudosAcordeon = document.querySelectorAll('.container-content');
 
-botoesDoAcordeoon2.addEventListener("click", () =>
-    area2.classList.toggle("active"));
+let conteudoAberto = null; // Armazena o conteúdo atualmente aberto
 
-botoesDoAcordeoon3.addEventListener("click", () =>
-    area3.classList.toggle("active"));
+botoesAcordeon.forEach((botao, indice) => {
+  botao.addEventListener('click', () => {
+    const conteudoAcordeonAtual = conteudosAcordeon[indice];
+    const estaAberto = conteudoAcordeonAtual === conteudoAberto; // Verifica se o conteúdo já está aberto
 
-botoesDoAcordeoon4.addEventListener("click", () =>
-    area4.classList.toggle("active"));
-
-
-var acc = document.getElementsByClassName("acordeon-mobile");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+    // Se o conteúdo já estiver aberto, feche-o
+    if (estaAberto) {
+      conteudoAcordeonAtual.classList.remove('ativo');
+      conteudoAberto = null; // Atualizar referência para indicar que nenhum conteúdo está aberto
+      return; // Sair da função para evitar abrir novamente
     }
+
+    // Se outro conteúdo estiver aberto, feche-o
+    if (conteudoAberto !== null) {
+      conteudoAberto.classList.remove('ativo');
+    }
+
+    // Alternar estado do conteúdo atual
+    conteudoAcordeonAtual.classList.toggle('ativo');
+
+    // Atualizar referência do conteúdo aberto
+    conteudoAberto = conteudoAcordeonAtual;
   });
-}
+});
