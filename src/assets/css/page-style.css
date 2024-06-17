@@ -201,7 +201,7 @@ header {
 
 /*Começo Menu flutuante*/
 .botoes-acessibilidade-menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -293,7 +293,7 @@ header {
     display: flex;
     flex-direction: row;
     height: 70px;
-    background-color: #051e34;
+    background-color: #340505;
 }
 
 .logo-img {
@@ -364,6 +364,10 @@ header {
     color: white;
     font-size: 2rem;
     cursor: pointer;
+}
+
+.btn-menu .dark-mode {
+    background-color: #15131b;
 }
 
 .btn-menu:hover {
@@ -538,16 +542,18 @@ body {
     transition: background-color 0.5s, color 0.5s;
 }
 .dark-mode header{
-    background-color: #222222;
+    background-color: #15131b;
     color: #ffffff;
 }
 
 /* Estilos para o modo escuro */
-.dark-mode body{
+body.dark-mode{
     background-color: #222222;
     color: #ffffff;
 }
-
+.dark-mode p {
+    color: #ffffff;
+}
 /*Fim Darkmode*/
 
 /*Começo rodape*/
@@ -560,7 +566,7 @@ body {
 }
 
 .dark-mode footer {
-    background: #2e6f1c;
+    background: #15131b;
 }
 
 
