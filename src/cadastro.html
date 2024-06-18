@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Acompanhante</title>
+    <link rel="stylesheet" href="../src/assets/css/cadastro.css">
+    <link rel="stylesheet" href="../src/assets/css/reset.css">
+    <script defer src="/src/assets/js/hamburger.js"></script>
+    <script defer src="/src/assets/js/acessibilidade.js"></script>
+    <script defer src="/src/assets/js/modo_escuro.js"></script>
+    <script defer src="/src/assets/js/texto_acessibilidade.js"></script>
+    
+</head>
+
+<body>
+
+    <!--Começo cabeçalho-->
+    <header>
+        <img class="logo" src="../src/assets/imagem_cadastro/24.png" alt="logo aqui" title="logo meu acompanhate">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="principal-page.html">Inicio</a></li>
+                <li><a href="">Quem Somos</a></li>
+                <li><a href="">Notícias</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+            </ul>
+        </nav>
+
+        <div class="area-acessibilidade">
+            <button class="btn-accessibilidade" title="Configurações de acessibilidade">
+                <img class="img-accessibilidade" src="../src/assets/Icones_projeto/14.png" alt="Acessibilidade">
+            </button>
+            <button class="hamburger">
+                <img class="img-hamburger" src="./assets/imagem_cadastro/12.png" alt="">
+            </button>
+        </div>
+    </header>
+
+    <!--Começo Menu flutuante-->
+    <span class="menu-acessibilidade">
+        <div class="botoes-acessibilidade-menu">
+            <button id="aumentar-texto" onclick="aumentarTexto()">Aumentar Texto</button>
+            <button id="dark-mode-toggle">Alternar Modo</button>
+        </div>
+    </span>
+    <!--Fim menu flutuante-->
+
+    <!--Fim cabeçalho-->
+
+    <!--começa corpo-->
+
+    <main>
+        <div class="container">
+            <div id="box-cadastro">
+                <section class="cadastro">
+                    <h1>Cadastrar usuário</h1>
+                    <form action="#">
+                        <div class="campo">
+                            <input placeholder="Nome" type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="campo">
+                            <input placeholder="E-mail" type="email" id="email" name="email" required>
+                        </div>
+                        <div class="campo">
+                            <input placeholder="Senha" type="password" id="senha" name="senha" required>
+                        </div>
+                        <div class="campo">
+                            <input placeholder="Confirmar Senha" type="password" id="confirmarSenha"
+                                name="confirmarSenha" required>
+                        </div>
+                        <div class="botoes">
+                            <button class="voltar-button" type="button">Voltar</button>
+                            <button class="cadastrar-button" type="submit">Cadastrar</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+
+        <!--imagem box direito-->
+            <div id="box-img">
+                <img id="editar-box-img" src="/src/assets/imagem_cadastro/24.png" alt="logo" title="logo acompanhate">
+            </div>
+    </main>
+
+
+    
+
+    <script src="./assets/cadastro_js/modo_escuro.js"></script>
+    <script src="./assets/cadastro_js/menu_acessibilidade.js"></script>
+    <script src="./assets/cadastro_js/texto_acessibilidade.js"></script>
+</body>
+
+</html>
