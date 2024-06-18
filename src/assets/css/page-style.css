@@ -357,6 +357,9 @@ header {
     /* Define 4 colunas de larguras iguais */
     gap: 1px;
 }
+.dark-mode .btn-menu {
+    background-color: #15131b;
+}
 
 .btn-menu {
     border: none;
@@ -366,9 +369,6 @@ header {
     cursor: pointer;
 }
 
-.btn-menu .dark-mode {
-    background-color: #15131b;
-}
 
 .btn-menu:hover {
     background-color: #FFBD59;
@@ -446,6 +446,11 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+
+.bem-vindo h2 {
+    display: flex;
+    justify-content: center;
 }
 
 .bem-vindo h2 {

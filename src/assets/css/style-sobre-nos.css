@@ -1,0 +1,313 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: #1C486F;
+    overflow-x: hidden;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C486F;
+    width: 100%;
+    height: 90px;
+    padding-inline: 16px;
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    width: 100vw;
+}
+
+.logo {
+    width: 120px;
+    height: 60px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 60px;
+    margin-left: 20px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-list a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    color: #ffe159;
+    text-decoration: none;
+}
+
+.area-acessibilidade {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    width: 300px;
+}
+
+.btn-accessibilidade {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+   border: none;
+    background: none;
+}
+
+.img-accessibilidade {
+    width: 50px;
+    height: 50px;
+    opacity: 50%;
+    transition: 0.1s ease-out;
+}
+
+.img-accessibilidade:hover {
+    width: 45px;
+    height: 45px;
+    opacity: 100%;
+    transition: 0.2s ease-in;
+
+}
+
+/*Começo Menu flutuante*/
+.botoes-acessibilidade-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: red solid;
+    width: 300px;
+    height: 200px;
+}
+
+
+.botoes-acessibilidade-menu.active {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    pointer-events: fill;
+}
+
+
+
+.menu-acessibilidade.active {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 1%;
+    top: 12%;
+    width: 350px;
+    height: 240px;
+    background: #1C486F;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+    pointer-events: none;
+}
+/*Fim Menu flutuante*/
+.hamburger {
+    display: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+/* trilho para menu de acessibilidade */
+.trilho {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    height: 30px;
+    background-color: #1a3953;
+    border-radius: 30px;
+    border: 1px solid #202020;
+    position: relative;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+/* botão para clicar e ativar a opção de acessibilidade */
+.btn-leitor-de-texto {
+    width: 30px;
+    height: 30px;
+    transform: scale(0.9);
+    background-color: #efefef;
+    border: 1px solid #202020;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transition: 500ms;
+    cursor: pointer;
+}
+/* quando o botão da opção de acessbilidade é clicado */
+.btn-leitor-de-texto.play {
+    left: 30px;
+    background-color: #f3f2f2;
+}
+/* alterações no trilho quando o botao é clicado */
+.trilho.play {
+    background-color: #ffe159;
+}
+
+.container-botao-ler{
+    display: flex;
+    background-color: red;
+    transform: scale(0.5);
+    border-radius: 100%;
+
+}
+
+
+
+/* botao play  - por padrão ele não é exibido*/
+.ler-button {
+    box-sizing: border-box;
+    height: 50px;
+    border-color: transparent transparent transparent #202020;
+    transition: 100ms all ease;
+    will-change: border-width;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 37px 0 37px 60px;
+    background-color: transparent;
+    display: none;
+}
+/* botão play quando clicado se torna visivel */
+.ler-button.play {
+    display: block;
+}
+
+/* botao play quando for clicado  vira o stop*/
+.ler-button.on {
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-width: 27px;
+    border-color: transparent;
+    background-color: #202020;
+    transition: 400ms;
+}
+
+
+
+/* Estilos do layout da página */
+.sec-sobre-nos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-sobre-nos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
+}
+
+
+.main-SN {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85vw;
+}
+
+.titulo-SN {
+    font-size: 3rem;
+    padding: 20px;
+}
+
+
+.texto-SN {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.texto-SN p {
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.texto2-SN {
+    width: 85%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+
+}
+
+.texto2-SN p {
+    font-size: 2rem;
+    text-align: justify;
+    line-height: 1.5em;
+
+}
+
+
+
+.img-SN {
+    width: 50%;
+}
+.img-SN img {
+    width: 100%;
+    height: 100%;
+}
+
+#fig-dev {
+    width: 90%;
+}
+
+
+.container-pessoas{
+    display: flex;
+    justify-content: center;
+}
+
+.pessoas {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Defines 4 columns of equal width */
+    gap: 20px;
+    width: 80vw;
+    height: 50vh;
+
+}
+
+.pessoas-content {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 250px;
+    border: 5px solid black;
+}
