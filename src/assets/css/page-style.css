@@ -374,7 +374,7 @@ header {
 }
 
 .sec-menu-content{
-    position: sticky;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -408,9 +408,6 @@ header {
 
 }
 
-
-
-
 .container-content {
     display: none;
     transition: 500ms;
@@ -421,30 +418,14 @@ header {
     display: block;
 }
 
-#bota-um {
-    background-color: blue;
-}
-
-#bota-dois {
-    background-color: rgb(251, 255, 3);
-}
-
-#bota-tres {
-    background-color: rgb(255, 24, 143);
-}
-
-#bota-quatro {
-    background-color: rgb(175, 39, 26);
-}
-
-
 .menu-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     border: 1px solid #cccccc;
-    margin-bottom: 10px;
+    background-color: wheat;
+    margin-bottom: 1px;
 }
 
 
