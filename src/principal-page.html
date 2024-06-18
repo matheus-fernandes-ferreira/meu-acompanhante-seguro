@@ -52,16 +52,7 @@
     <span class="menu-acessibilidade">
         <div class="botoes-acessibilidade-menu">
          
-        <div class="txtbtn1">
-            <div class="txtmodoesc">MODO ESCURO</div>
-            <div class="btn-audio">
-                <input type="checkbox" name="darkmode" id="darkmode">
-                <label id="darktg" for="darkmode"></label>
-            </div>
-
-        </div> 
-
-        <div class="txtbtn1">
+         <div class="txtbtn1">
             <div class="txtmodoesc">AUMENTAR TEXTO</div>
             <div class="btn-modo-dark">
                 <input type="checkbox" name="darkmode" id="darkmode">
@@ -79,6 +70,10 @@
                 <label id="darktg" for="darkmode"></label>
             </div>
         </div>
+        
+        <div class="trilho">
+            <button class="btn-leitor-de-texto"></button>
+        </div> 
 
         </div>
     </span>
@@ -118,7 +113,9 @@
         <div class="container-content" id="bota-um">
             <div class="menu-content">
 
-                <div class="menu-item">
+                <div class="menu-item" data-reading="false">
+                    <button class="ler-button"> </button>
+
                     <h2>Higienização no Ambiente Hospitalar: Guia Completo para Acompanhantes</h2>
                     <p>A presença de acompanhantes em ambientes hospitalares é fundamental para o bem-estar dos pacientes, 
                         proporcionando apoio emocional e contribuindo para o processo de recuperação. 

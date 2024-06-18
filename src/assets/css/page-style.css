@@ -1,9 +1,9 @@
 * {
-    margin:0;
-    padding:0;
-    list-style:none;
-    vertical-align:baseline;
-    }
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+}
 
 /*Web*/
 
@@ -38,11 +38,13 @@
     transition: 500ms;
     cursor: pointer;
 }
+
 /* quando o botão da opção de acessbilidade é clicado */
 .btn-leitor-de-texto.play {
     left: 40px;
     background-color: #f3f2f2;
 }
+
 /* alterações no trilho quando o botao é clicado */
 .trilho.play {
     background-color: #FFBD59;
@@ -61,6 +63,7 @@
     background-color: transparent;
     display: none;
 }
+
 /* botão play quando clicado se torna visivel */
 .ler-button.play {
     display: block;
@@ -80,15 +83,15 @@
 
 body::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background: transparent;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #163958;    
-  }
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #163958;
+}
 
 
 
@@ -104,13 +107,14 @@ p {
     font-weight: 500;
 }
 
-.painel p{
+.painel p {
     font-size: 25px;
 }
 
 .titulo-acordeon-wb {
     font-size: 20px;
 }
+
 /*------Texto-------*/
 
 body {
@@ -125,12 +129,13 @@ a {
     color: #fff;
 }
 
-#Entrar{
+#Entrar {
     text-decoration: none;
     color: white;
     font-weight: 500;
 }
-#Entrar:hover{
+
+#Entrar:hover {
     color: #ffe159;
 }
 
@@ -191,7 +196,7 @@ header {
     width: 55px;
     height: 55px;
     border-radius: 100%;
-   border: none;
+    border: none;
     background: none;
 }
 
@@ -221,7 +226,8 @@ header {
     justify-content: space-around;
     align-items: center
 }
-.txtmodoesc{
+
+.txtmodoesc {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -267,6 +273,7 @@ header {
     transition: 0.2s ease-in;
     pointer-events: none;
 }
+
 /*Fim Menu flutuante*/
 .hamburger {
     display: none;
@@ -362,6 +369,15 @@ header {
     height: 100%;
 }
 
+.menu-item p {
+    width: 85%;
+    text-align: justify;
+    padding-top: 20px;
+    text-align: justify;
+
+}
+
+
 .banner-content {
     display: flex;
     flex-direction: row;
@@ -373,7 +389,7 @@ header {
     border: 5px solid red;
 }
 
-.sec-menu-content{
+.sec-menu-content {
     position: relative;
     top: 0;
     left: 0;
@@ -389,6 +405,7 @@ header {
     /* Define 4 colunas de larguras iguais */
     gap: 1px;
 }
+
 .dark-mode .btn-menu {
     background-color: #15131b;
 }
@@ -424,19 +441,18 @@ header {
     align-items: center;
     padding: 20px;
     border: 1px solid #cccccc;
-    background-color: wheat;
     margin-bottom: 1px;
 }
 
 
 .menu-item h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 10px;
+    display: flex;
+    padding-top: 20px;
 }
 
-.menu-item p {
-    text-align: center;
-}
+
 
 /*----------------------Acordeon-------------------------*/
 
@@ -559,23 +575,26 @@ body {
     color: #000000;
     transition: background-color 0.5s, color 0.5s;
 }
-.dark-mode header{
+
+.dark-mode header {
     background-color: #15131b;
     color: #ffffff;
 }
 
 /* Estilos para o modo escuro */
-body.dark-mode{
+body.dark-mode {
     background-color: #222222;
     color: #ffffff;
 }
+
 .dark-mode p {
     color: #ffffff;
 }
+
 /*Fim Darkmode*/
 
 /*Começo rodape*/
- footer {
+footer {
     display: flex;
     flex-direction: column;
     background: #1C486F;
@@ -589,55 +608,56 @@ body.dark-mode{
 
 
 
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1280px) {
 
     body::-webkit-scrollbar {
         width: 10px;
-      }
-      
-      body::-webkit-scrollbar-track {
+    }
+
+    body::-webkit-scrollbar-track {
         background: transparent;
-      }
-      
-      body::-webkit-scrollbar-thumb {
-        background-color: #163958;    
-      }
-    
-    
-    
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: #163958;
+    }
+
+
+
     /*------Texto------*/
     /*Barra de navegação superior*/
     .nav-list a {
         font-size: 20px;
     }
-    
+
     /*Maior parte dos textos da pagina*/
     p {
         font-size: 25px;
         font-weight: 500;
     }
-    
-    .painel p{
+
+    .painel p {
         font-size: 25px;
     }
-    
+
     .titulo-acordeon-wb {
         font-size: 20px;
     }
+
     /*------Texto-------*/
-    
+
     body {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     /*Comerço barra navegação*/
     a {
         text-decoration: none;
         color: #fff;
     }
-    
+
     header {
         display: flex;
         align-items: center;
@@ -647,19 +667,19 @@ body.dark-mode{
         height: 90px;
         padding-inline: 16px;
     }
-    
+
     .nav {
         display: flex;
         flex-direction: row;
         margin-left: 15px;
         width: 100vw;
     }
-    
+
     .logo {
         width: 120px;
         height: 60px;
     }
-    
+
     .nav-list {
         display: flex;
         gap: 60px;
@@ -667,24 +687,24 @@ body.dark-mode{
         list-style: none;
         margin-top: 20px;
     }
-    
+
     .nav-list a {
         color: #fff;
         text-decoration: none;
     }
-    
+
     .nav-list a:hover {
         color: #ffe159;
         text-decoration: none;
     }
-    
+
     .area-acessibilidade {
         display: flex;
         gap: 30px;
         justify-content: flex-end;
         width: 300px;
     }
-    
+
     .btn-accessibilidade {
         display: flex;
         padding: 20px;
@@ -693,31 +713,31 @@ body.dark-mode{
         width: 55px;
         height: 55px;
         border-radius: 100%;
-       border: none;
+        border: none;
         background: none;
     }
-    
+
     .img-accessibilidade {
         width: 50px;
         height: 50px;
         opacity: 50%;
         transition: 0.1s ease-out;
     }
-    
+
     .img-accessibilidade:hover {
         width: 45px;
         height: 45px;
         opacity: 100%;
         transition: 0.2s ease-in;
-    
+
     }
-    
+
     /*Começo Menu flutuante*/
     .botoes-acessibilidade-menu {
         display: none;
     }
-    
-    
+
+
     .botoes-acessibilidade-menu.active {
         display: flex;
         flex-direction: row;
@@ -725,8 +745,8 @@ body.dark-mode{
         height: 150px;
         pointer-events: fill;
     }
-    
-    
+
+
     .menu-acessibilidade.active {
         display: flex;
         position: absolute;
@@ -741,15 +761,16 @@ body.dark-mode{
         transition: 0.2s ease-in;
         pointer-events: none;
     }
+
     /*Fim Menu flutuante*/
     .hamburger {
         display: none;
         background: none;
         cursor: pointer;
     }
-    
+
     /*Fim barra navegação*/
-    
+
     /*Começo banner superior*/
     .banner {
         display: flex;
@@ -759,17 +780,17 @@ body.dark-mode{
         justify-content: center;
         background: url(../Imagens_projeto/6.svg) no-repeat center;
     }
-    
-    
-    
+
+
+
     .logo-banner {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 50%;
     }
-    
-    
+
+
     .texto-banner {
         background-color: #1C486F;
         color: #FBE8E8;
@@ -779,9 +800,9 @@ body.dark-mode{
         padding: 10px;
         border-radius: 5px;
         margin-left: 40px;
-        
+
     }
-    
+
     .container-banner {
         gap: 5px;
         width: 800px;
@@ -789,17 +810,18 @@ body.dark-mode{
         display: flex;
         justify-content: center;
     }
+
     /*Fim Banner superior*/
-    
+
     /*Começo botões web*/
     #acordeon {
         display: none;
     }
-    
-    .mobile-menu-acordeon{
+
+    .mobile-menu-acordeon {
         display: none;
     }
-    
+
     #desktop-menu-acordeon {
         display: flex;
         flex-direction: row;
@@ -809,7 +831,7 @@ body.dark-mode{
         width: 100%;
         background-color: #1C486F;
     }
-    
+
     .botao-higienizacao {
         display: flex;
         margin-left: 5px;
@@ -821,8 +843,8 @@ body.dark-mode{
         margin-bottom: 5px;
         border: none;
     }
-    
-    
+
+
     .botao-protecao {
         display: flex;
         margin-left: 5px;
@@ -834,8 +856,8 @@ body.dark-mode{
         margin-bottom: 5px;
         border: none;
     }
-    
-    
+
+
     .botao-contaminacao {
         display: flex;
         margin-left: 5px;
@@ -847,8 +869,8 @@ body.dark-mode{
         margin-bottom: 5px;
         border: none;
     }
-    
-    
+
+
     .botao-leia-mais {
         display: flex;
         margin-left: 5px;
@@ -860,8 +882,8 @@ body.dark-mode{
         margin-bottom: 5px;
         border: none;
     }
-    
-    
+
+
     .fundo-icone-wb {
         display: flex;
         justify-content: center;
@@ -872,21 +894,21 @@ body.dark-mode{
         transition: 0.6s;
         width: 150px;
         height: 60%;
-        
+
     }
-    
+
     .fundo-icone-wb:hover {
         background-color: #ffe159;
         height: 100%;
         transition: 0.8ms ease-out;
-        
+
     }
-    
+
     .icone-acordeon-wb {
         width: 60px;
         height: 60px;
     }
-    
+
     .titulo-acordeon-wb {
         display: flex;
         justify-content: center;
@@ -895,28 +917,30 @@ body.dark-mode{
         height: 40px;
         color: white;
     }
+
     /*Fim botões web*/
-    
+
     /*Começo menu expandido*/
     .area-expandida {
         display: none;
     }
+
     .area-expandida-2 {
         display: none;
     }
-    
+
     .area-expandida-3 {
         display: none;
     }
-    
+
     .area-expandida-4 {
         display: none;
     }
-    
+
     .conteudo-area-expandida {
         display: none;
     }
-    
+
     .area-expandida.active {
         background: #FBE8E8;
         display: flex;
@@ -927,7 +951,7 @@ body.dark-mode{
         height: 2000px;
         margin-bottom: 15px;
     }
-    
+
     .area-expandida-2.active {
         background: #dd1b1b;
         display: flex;
@@ -938,7 +962,7 @@ body.dark-mode{
         height: 2000px;
         margin-bottom: 15px;
     }
-    
+
     .area-expandida-3.active {
         background: #FBE8E8;
         display: flex;
@@ -949,7 +973,7 @@ body.dark-mode{
         height: 2000px;
         margin-bottom: 15px;
     }
-    
+
     .area-expandida-4.active {
         background: #FBE8E8;
         display: flex;
@@ -960,7 +984,7 @@ body.dark-mode{
         height: 2000px;
         margin-bottom: 15px;
     }
-    
+
     .conteudo-area {
         display: flex;
         flex-direction: row;
@@ -969,8 +993,8 @@ body.dark-mode{
         width: 75%;
         height: 20%;
     }
-    
-    
+
+
     .texto-expand {
         display: flex;
         text-align: center;
@@ -978,33 +1002,33 @@ body.dark-mode{
         width: 70%;
         flex-direction: column;
     }
-    
-    .conteudo-area img{
+
+    .conteudo-area img {
         width: 350px;
         height: 350px;
     }
-    
+
     .video-orientacao iframe {
         border: #1C486F solid;
         margin-top: 50px;
         width: 885px;
         height: 500px;
     }
-    
+
     /*Fim menu expandido*/
-    
+
     main {
         display: flex;
         flex-direction: column;
         width: 80%;
     }
-    
+
     #informacao {
         display: flex;
         flex-direction: column;
         padding: 10px;
     }
-    
+
     .bem-vindo {
         color: #1C486F;
         display: flex;
@@ -1012,21 +1036,21 @@ body.dark-mode{
         justify-content: center;
         text-align: center;
     }
-    
+
     .bem-vindo h2 {
         display: flex;
         justify-content: center;
     }
-    
+
     #info {
         display: flex;
         justify-content: center;
         flex-direction: row;
         align-items: center;
     }
-    
+
     /*Fim Informações web*/
-    
+
     /*Commeço destaque web*/
     .nomedistaque {
         display: flex;
@@ -1036,7 +1060,7 @@ body.dark-mode{
         width: 100%;
         height: 60px;
     }
-    
+
     .destaques {
         display: flex;
         flex-direction: column;
@@ -1044,7 +1068,7 @@ body.dark-mode{
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         color: rgba(28, 72, 111, 1);
     }
-    
+
     #alinhamento-destaque {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -1052,7 +1076,7 @@ body.dark-mode{
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     .destaque {
         display: flex;
         flex-direction: column;
@@ -1060,23 +1084,23 @@ body.dark-mode{
         height: 300px;
         width: 200px;
     }
-    
+
     #destaque-img {
         display: flex;
         flex-direction: column;
     }
-    
+
     .imgdest {
         display: flex;
         flex-direction: row;
         height: 280px;
         width: 280px;
     }
-    
+
     #carrosel-destaque {
         display: flex;
     }
-    
+
     .Banner-destaque {
         display: flex;
         flex-direction: row;
@@ -1085,7 +1109,7 @@ body.dark-mode{
         width: 720px;
         height: 300px;
     }
-    
+
     .txt-banner {
         display: flex;
         flex-direction: column;
@@ -1096,26 +1120,26 @@ body.dark-mode{
         width: 400px;
         height: 280px;
     }
-    
+
     /*Fim destaque web*/
-    
+
     /*Começo Darkmode*/
-    
+
     body {
         background-color: #ffffff;
         color: #000000;
         transition: background-color 0.5s, color 0.5s;
     }
-    
+
     /* Estilos para o modo escuro */
     body.dark-mode {
         background-color: #222222;
         color: #ffffff;
     }
-    
-    
+
+
     /*Fim Darkmode*/
-    
+
     /*Começo rodape*/
     footer {
         display: flex;
@@ -1123,13 +1147,13 @@ body.dark-mode{
         background: #1C486F;
         height: 450px;
         width: 100%;
-    
-}
+
+    }
 }
 
 
 /*Fim rodape*/
-@media only screen and (max-width: 884px){
+@media only screen and (max-width: 884px) {
 
     /*Config*/
     body {
@@ -1153,7 +1177,7 @@ body.dark-mode{
 
     .menu-acessibilidade.active {
         display: none;
-        
+
     }
 
     .menu-acessibilidade.active {
@@ -1181,11 +1205,12 @@ body.dark-mode{
         padding: 5px;
         border: none;
     }
-    .img-hamburger{
+
+    .img-hamburger {
         width: 30px;
         height: 30px;
     }
-   
+
 
     .nav-active .hamburger {
         position: relative;
@@ -1266,9 +1291,9 @@ body.dark-mode{
         justify-content: center;
         align-items: center;
     }
-    
+
     .texto-banner {
-        display: flex   ;
+        display: flex;
         background-color: #1C486F;
         color: #FBE8E8;
         width: 90vw;
@@ -1278,16 +1303,16 @@ body.dark-mode{
         border-radius: 5px;
         margin-left: 0px;
     }
-  
+
     /*--Cemeço arcodeon mobile--*/
-    
+
     /*Oculta o acordeon desktop*/
     #desktop-menu-acordeon {
         display: none;
     }
 
     /*Section do acordeon mobile*/
-    .mobile-menu-acordeon{
+    .mobile-menu-acordeon {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -1307,52 +1332,53 @@ body.dark-mode{
         font-size: 15px;
         transition: 0.4s;
         margin-bottom: 5px;
-      }
+    }
 
-      .fundo-icone-mb{
+    .fundo-icone-mb {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 20%;
         height: 120px;
         background-color: #FFBD59;
-      }
+    }
 
-      .icone-acordeon-mb{
+    .icone-acordeon-mb {
         width: 75px;
         height: 75px;
-      }
+    }
 
-      .acordeon-mobile h1{
+    .acordeon-mobile h1 {
         margin-left: 3%;
         font-size: 20px;
-      }
+    }
 
-      /*Quando o acordeon estiver ativo*/
-      .active, .acordeon-mobile:hover {
+    /*Quando o acordeon estiver ativo*/
+    .active,
+    .acordeon-mobile:hover {
         background-color: #FFBD59;
         color: #1C486F;
-      }
+    }
 
-      /*Corpo do aordeon expandido*/
-      .painel {
+    /*Corpo do aordeon expandido*/
+    .painel {
         display: none;
         flex-direction: column;
         background-color: rgb(183, 24, 24);
         padding: 10%;
         align-items: center;
         text-align: center;
-      }
+    }
 
-      .painel p{
+    .painel p {
         width: 100%;
-      }
+    }
 
-      .img-acordeon-mobile{
+    .img-acordeon-mobile {
         width: 40%;
-      }
+    }
 
-      /*Fim arcodeon mobile*/
+    /*Fim arcodeon mobile*/
 
 
     div .seja-bem-vindo-banner img {
@@ -1396,6 +1422,7 @@ body.dark-mode{
         display: flex;
         justify-content: center;
     }
+
     /*Fim Informações*/
 
     /*Começo destaque*/
@@ -1432,6 +1459,7 @@ body.dark-mode{
         flex-direction: column;
         font-size: small;
     }
+
     /*Fim destaque*/
 
 
@@ -1441,6 +1469,7 @@ body.dark-mode{
         height: 200px;
 
     }
+
     /*Fim rodape*/
 }
 
@@ -1470,7 +1499,7 @@ body.dark-mode{
 
     .menu-acessibilidade.active {
         display: none;
-        
+
     }
 
     .menu-acessibilidade.active {
@@ -1498,11 +1527,12 @@ body.dark-mode{
         padding: 5px;
         border: none;
     }
-    .img-hamburger{
+
+    .img-hamburger {
         width: 30px;
         height: 30px;
     }
-   
+
 
     .nav-active .hamburger {
         position: relative;
@@ -1583,9 +1613,9 @@ body.dark-mode{
         justify-content: center;
         align-items: center;
     }
-    
+
     .texto-banner {
-        display: flex   ;
+        display: flex;
         background-color: #1C486F;
         color: #FBE8E8;
         width: 90vw;
@@ -1595,16 +1625,16 @@ body.dark-mode{
         border-radius: 5px;
         margin-left: 0px;
     }
-  
+
     /*--Cemeço arcodeon mobile--*/
-    
+
     /*Oculta o acordeon desktop*/
     #desktop-menu-acordeon {
         display: none;
     }
 
     /*Section do acordeon mobile*/
-    .mobile-menu-acordeon{
+    .mobile-menu-acordeon {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -1624,52 +1654,53 @@ body.dark-mode{
         font-size: 15px;
         transition: 0.4s;
         margin-bottom: 5px;
-      }
+    }
 
-      .fundo-icone-mb{
+    .fundo-icone-mb {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 20%;
         height: 120px;
         background-color: #FFBD59;
-      }
+    }
 
-      .icone-acordeon-mb{
+    .icone-acordeon-mb {
         width: 75px;
         height: 75px;
-      }
+    }
 
-      .acordeon-mobile h1{
+    .acordeon-mobile h1 {
         margin-left: 3%;
         font-size: 20px;
-      }
+    }
 
-      /*Quando o acordeon estiver ativo*/
-      .active, .acordeon-mobile:hover {
+    /*Quando o acordeon estiver ativo*/
+    .active,
+    .acordeon-mobile:hover {
         background-color: #FFBD59;
         color: #1C486F;
-      }
+    }
 
-      /*Corpo do aordeon expandido*/
-      .painel {
+    /*Corpo do aordeon expandido*/
+    .painel {
         display: none;
         flex-direction: column;
         background-color: rgb(183, 24, 24);
         padding: 10%;
         align-items: center;
         text-align: center;
-      }
+    }
 
-      .painel p{
+    .painel p {
         width: 100%;
-      }
+    }
 
-      .img-acordeon-mobile{
+    .img-acordeon-mobile {
         width: 40%;
-      }
+    }
 
-      /*Fim arcodeon mobile*/
+    /*Fim arcodeon mobile*/
 
 
     div .seja-bem-vindo-banner img {
@@ -1713,6 +1744,7 @@ body.dark-mode{
         display: flex;
         justify-content: center;
     }
+
     /*Fim Informações*/
 
     /*Começo destaque*/
@@ -1749,6 +1781,7 @@ body.dark-mode{
         flex-direction: column;
         font-size: small;
     }
+
     /*Fim destaque*/
 
 
@@ -1758,6 +1791,7 @@ body.dark-mode{
         height: 200px;
 
     }
+
     /*Fim rodape*/
 }
 
@@ -1788,7 +1822,7 @@ body.dark-mode{
 
     .menu-acessibilidade.active {
         display: none;
-        
+
     }
 
     .menu-acessibilidade.active {
@@ -1816,11 +1850,12 @@ body.dark-mode{
         padding: 5px;
         border: none;
     }
-    .img-hamburger{
+
+    .img-hamburger {
         width: 30px;
         height: 30px;
     }
-   
+
 
     .nav-active .hamburger {
         position: relative;
@@ -1904,12 +1939,12 @@ body.dark-mode{
         justify-content: center;
         align-items: center;
     }
-    
+
     .texto-banner {
         display: flex;
         background-color: #1C486F;
         color: #FBE8E8;
-        right:10px;
+        right: 10px;
         width: 85vw;
         height: 43vw;
         text-align: center;
@@ -1918,16 +1953,16 @@ body.dark-mode{
         border-radius: 5px;
         margin-left: 0px;
     }
-  
+
     /*--Cemeço arcodeon mobile--*/
-    
+
     /*Oculta o acordeon desktop*/
     #desktop-menu-acordeon {
         display: none;
     }
 
     /*Section do acordeon mobile*/
-    .mobile-menu-acordeon{
+    .mobile-menu-acordeon {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -1947,52 +1982,53 @@ body.dark-mode{
         font-size: 15px;
         transition: 0.4s;
         margin-bottom: 1%;
-      }
+    }
 
-      .fundo-icone-mb{
+    .fundo-icone-mb {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 20%;
         height: 75px;
         background-color: #FFBD59;
-      }
+    }
 
-      .icone-acordeon-mb{
+    .icone-acordeon-mb {
         width: 50px;
         height: 50px;
-      }
+    }
 
-      .acordeon-mobile h1{
+    .acordeon-mobile h1 {
         margin-left: 3%;
         font-size: 20px;
-      }
+    }
 
-      /*Quando o acordeon estiver ativo*/
-      .active, .acordeon-mobile:hover {
+    /*Quando o acordeon estiver ativo*/
+    .active,
+    .acordeon-mobile:hover {
         background-color: #FFBD59;
         color: #1C486F;
-      }
+    }
 
-      /*Corpo do aordeon expandido*/
-      .painel {
+    /*Corpo do aordeon expandido*/
+    .painel {
         display: none;
         flex-direction: column;
         background-color: rgb(183, 24, 24);
         padding: 10%;
         align-items: center;
         text-align: center;
-      }
+    }
 
-      .painel p{
+    .painel p {
         width: 100%;
-      }
+    }
 
-      .img-acordeon-mobile{
+    .img-acordeon-mobile {
         width: 40%;
-      }
+    }
 
-      /*Fim arcodeon mobile*/
+    /*Fim arcodeon mobile*/
 
 
     div .seja-bem-vindo-banner img {
@@ -2040,6 +2076,7 @@ body.dark-mode{
         display: flex;
         justify-content: center;
     }
+
     /*Fim Informações*/
 
     /*Começo destaque*/
@@ -2076,6 +2113,7 @@ body.dark-mode{
         flex-direction: column;
         font-size: small;
     }
+
     /*Fim destaque*/
 
 
@@ -2085,6 +2123,7 @@ body.dark-mode{
         height: 200px;
 
     }
+
     /*Fim rodape*/
 }
 
@@ -2100,6 +2139,7 @@ body.dark-mode{
         /* Define 4 colunas de larguras iguais */
         gap: 2px;
     }
+
     /*Config*/
     body {
         display: flex;
@@ -2121,7 +2161,7 @@ body.dark-mode{
 
     .menu-acessibilidade.active {
         display: none;
-        
+
     }
 
     .menu-acessibilidade.active {
@@ -2148,11 +2188,12 @@ body.dark-mode{
         padding: 5px;
         border: none;
     }
-    .img-hamburger{
+
+    .img-hamburger {
         width: 30px;
         height: 30px;
     }
-   
+
 
     .nav-active .hamburger {
         position: relative;
@@ -2234,7 +2275,7 @@ body.dark-mode{
         justify-content: center;
         align-items: center;
     }
-    
+
     .texto-banner {
         display: flex;
         background-color: #1C486F;
@@ -2247,16 +2288,16 @@ body.dark-mode{
         padding: 10px;
         border-radius: 5px;
     }
-  
+
     /*--Cemeço arcodeon mobile--*/
-    
+
     /*Oculta o acordeon desktop*/
     #desktop-menu-acordeon {
         display: none;
     }
 
     /*Section do acordeon mobile*/
-    .mobile-menu-acordeon{
+    .mobile-menu-acordeon {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -2276,52 +2317,53 @@ body.dark-mode{
         font-size: 15px;
         transition: 0.4s;
         margin-bottom: 1%;
-      }
+    }
 
-      .fundo-icone-mb{
+    .fundo-icone-mb {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 20%;
         height: 75px;
         background-color: #FFBD59;
-      }
+    }
 
-      .icone-acordeon-mb{
+    .icone-acordeon-mb {
         width: 50px;
         height: 50px;
-      }
+    }
 
-      .acordeon-mobile h1{
+    .acordeon-mobile h1 {
         margin-left: 3%;
         font-size: 20px;
-      }
+    }
 
-      /*Quando o acordeon estiver ativo*/
-      .active, .acordeon-mobile:hover {
+    /*Quando o acordeon estiver ativo*/
+    .active,
+    .acordeon-mobile:hover {
         background-color: #FFBD59;
         color: #1C486F;
-      }
+    }
 
-      /*Corpo do aordeon expandido*/
-      .painel {
+    /*Corpo do aordeon expandido*/
+    .painel {
         display: none;
         flex-direction: column;
         background-color: rgb(183, 24, 24);
         padding: 10%;
         align-items: center;
         text-align: center;
-      }
+    }
 
-      .painel p{
+    .painel p {
         width: 100%;
-      }
+    }
 
-      .img-acordeon-mobile{
+    .img-acordeon-mobile {
         width: 40%;
-      }
+    }
 
-      /*Fim arcodeon mobile*/
+    /*Fim arcodeon mobile*/
 
 
     div .seja-bem-vindo-banner img {
@@ -2369,6 +2411,7 @@ body.dark-mode{
         display: flex;
         justify-content: center;
     }
+
     /*Fim Informações*/
 
     /*Começo destaque*/
@@ -2405,6 +2448,7 @@ body.dark-mode{
         flex-direction: column;
         font-size: small;
     }
+
     /*Fim destaque*/
 
 
@@ -2414,6 +2458,7 @@ body.dark-mode{
         height: 200px;
 
     }
+
     /*Fim rodape*/
 }
 
@@ -2443,7 +2488,7 @@ body.dark-mode{
 
     .menu-acessibilidade.active {
         display: none;
-        
+
     }
 
     .menu-acessibilidade.active {
@@ -2471,11 +2516,12 @@ body.dark-mode{
         padding: 5px;
         border: none;
     }
-    .img-hamburger{
+
+    .img-hamburger {
         width: 30px;
         height: 30px;
     }
-   
+
 
     .nav-active .hamburger {
         position: relative;
@@ -2557,7 +2603,7 @@ body.dark-mode{
         justify-content: center;
         align-items: center;
     }
-    
+
     .texto-banner {
         display: flex;
         background-color: #1C486F;
@@ -2570,16 +2616,16 @@ body.dark-mode{
         padding: 10px;
         border-radius: 5px;
     }
-  
+
     /*--Cemeço arcodeon mobile--*/
-    
+
     /*Oculta o acordeon desktop*/
     #desktop-menu-acordeon {
         display: none;
     }
 
     /*Section do acordeon mobile*/
-    .mobile-menu-acordeon{
+    .mobile-menu-acordeon {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -2599,52 +2645,53 @@ body.dark-mode{
         font-size: 15px;
         transition: 0.4s;
         margin-bottom: 1%;
-      }
+    }
 
-      .fundo-icone-mb{
+    .fundo-icone-mb {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 20%;
         height: 75px;
         background-color: #FFBD59;
-      }
+    }
 
-      .icone-acordeon-mb{
+    .icone-acordeon-mb {
         width: 50px;
         height: 50px;
-      }
+    }
 
-      .acordeon-mobile h1{
+    .acordeon-mobile h1 {
         margin-left: 3%;
         font-size: 20px;
-      }
+    }
 
-      /*Quando o acordeon estiver ativo*/
-      .active, .acordeon-mobile:hover {
+    /*Quando o acordeon estiver ativo*/
+    .active,
+    .acordeon-mobile:hover {
         background-color: #FFBD59;
         color: #1C486F;
-      }
+    }
 
-      /*Corpo do aordeon expandido*/
-      .painel {
+    /*Corpo do aordeon expandido*/
+    .painel {
         display: none;
         flex-direction: column;
         background-color: rgb(183, 24, 24);
         padding: 10%;
         align-items: center;
         text-align: center;
-      }
+    }
 
-      .painel p{
+    .painel p {
         width: 100%;
-      }
+    }
 
-      .img-acordeon-mobile{
+    .img-acordeon-mobile {
         width: 40%;
-      }
+    }
 
-      /*Fim arcodeon mobile*/
+    /*Fim arcodeon mobile*/
 
 
     div .seja-bem-vindo-banner img {
@@ -2692,6 +2739,7 @@ body.dark-mode{
         display: flex;
         justify-content: center;
     }
+
     /*Fim Informações*/
 
     /*Começo destaque*/
@@ -2728,6 +2776,7 @@ body.dark-mode{
         flex-direction: column;
         font-size: small;
     }
+
     /*Fim destaque*/
 
 
@@ -2737,6 +2786,7 @@ body.dark-mode{
         height: 200px;
 
     }
+
     /*Fim rodape*/
 }
 
@@ -2749,13 +2799,13 @@ body.dark-mode{
     display: block;
     background: #ebebeb;
     border-radius: 200px;
-    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), 
-    inset 0px -5px 15px rgba(255, 255, 255, 0.4 );
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+        inset 0px -5px 15px rgba(255, 255, 255, 0.4);
     cursor: pointer;
     transition: 1s;
 }
 
-#darktg:after{
+#darktg:after {
     content: " ";
     width: 15px;
     height: 15px;
@@ -2771,41 +2821,41 @@ body.dark-mode{
     background-size: cover;
 }
 
-#darkmode{
+#darkmode {
     width: 0;
     height: 0;
     visibility: hidden
 }
 
-#darkmode:checked + #darktg {
+#darkmode:checked+#darktg {
     background: #fff #3a3a3a;
 }
 
-#darkmode:checked + #darktg:after{
+#darkmode:checked+#darktg:after {
     left: 47px;
     transform: translateX(-100%);
     background: linear-gradient(180deg, #ffcc89, #d8860b);
     background-image: url('/src/assets/Icones_projeto/sun-svgrepo-com.svg');
     background-position: center center;
     background-size: cover;
-    
+
 }
 
-#darktg:active:after{
+#darktg:active:after {
     width: 10px;
 }
 
-.btn-modo-dark{
+.btn-modo-dark {
     display: flex;
     align-items: center;
 }
 
-.btn-aumentar-texto{
+.btn-aumentar-texto {
     display: flex;
     align-items: center;
 }
 
-.btn-audio{
+.btn-audio {
     display: flex;
     align-items: center;
 }
