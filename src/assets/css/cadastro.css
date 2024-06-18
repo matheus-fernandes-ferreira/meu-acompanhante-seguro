@@ -232,6 +232,11 @@ header {
   pointer-events: fill;
 }
 
+.abutton-cadastro{
+  text-decoration: none;
+  color: white;
+}
+
 /*Fim Menu flutuante*/
 
 

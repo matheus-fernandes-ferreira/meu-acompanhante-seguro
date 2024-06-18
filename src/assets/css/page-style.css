@@ -125,6 +125,15 @@ a {
     color: #fff;
 }
 
+#Entrar{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+#Entrar:hover{
+    color: #ffe159;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -170,6 +179,8 @@ header {
     gap: 30px;
     justify-content: flex-end;
     width: 300px;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-accessibilidade {
@@ -200,6 +211,32 @@ header {
 }
 
 /*Começo Menu flutuante*/
+.txtbtn1 {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 350px;
+    padding-left: 50%;
+    padding-bottom: 70%;
+    justify-content: space-around;
+    align-items: center
+}
+.txtmodoesc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    height: 50px;
+    width: 100px;
+
+}
+
+
+
+
 .botoes-acessibilidade-menu {
     display: none;
     flex-direction: column;
@@ -215,8 +252,6 @@ header {
     height: 50px;
     pointer-events: fill;
 }
-
-
 
 .menu-acessibilidade.active {
     display: flex;
@@ -2780,12 +2815,16 @@ body.dark-mode{
 }
 
 .btn-modo-dark{
+    display: flex;
+    align-items: center;
 }
 
 .btn-aumentar-texto{
- 
+    display: flex;
+    align-items: center;
 }
 
 .btn-audio{
- 
+    display: flex;
+    align-items: center;
 }
