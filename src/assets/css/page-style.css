@@ -104,6 +104,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f8f9fa;
 }
 
 
@@ -414,19 +415,24 @@ header {
 }
 
 .sec-menu-content {
+    display: flex;
+    flex-direction: column;
     position: relative;
+    align-items: center;
+    background-color: #1C486F;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
 }
 
 .botoes-acordeon {
-    width: 100%;
+    width: 1440px;
     height: 200px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     /* Define 4 colunas de larguras iguais */
+
     gap: 1px;
 }
 
@@ -457,65 +463,145 @@ header {
 
 .container-content.ativo {
     display: block;
+    background-color: white;
+}
+.menu-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
 }
 
+
+
+
 .menu-item {
+    width: 1440px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    border: 1px solid #cccccc;
+    background-color: #f8f9fa;
+    border: 3px solid white;
     margin-bottom: 1px;
 }
 
 
 .menu-item h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 10px;
     display: flex;
     padding-top: 20px;
+    text-align: center;
+
+}
+.menu-item p {
+    display: flex;
+    font-size: 1.6rem;
+   margin: 40px;
 }
 
 
+/*---------------------Fim-Acordeon-------------------------*/
 
-/*----------------------Acordeon-------------------------*/
 
-
-main {
+.section-bemVindo {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
-#informacao {
+.content {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    width: 700px;
+    height: 200px;
+}
+
+.box-imagem {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    width: 30%;
+    height: 100%;
 }
 
-.bem-vindo {
-    color: #1C486F;
+.box-texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.box-texto>p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.title-bemVindo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.title-bemVindo p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.4rem;
     text-align: center;
 }
 
-.bem-vindo h2 {
-    display: flex;
-    justify-content: center;
+.title-bemVindo>p>span {
+    font-weight: 900;
+    color: white;
+    background-color: #1C486F;
 }
 
-.bem-vindo h2 {
-    display: flex;
-    justify-content: center;
+.title-bemVindo>p #span-seguro {
+    color: #FFBD59;
 }
 
-#info {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+.box-imagem>img {
+    height: 100%;
+}
+
+
+/*Responsividade */
+@media (max-width: 768px) {
+
+    /* telas menores que 768px (tablets and mobiles) */
+    .sessao-nav {
+        height: 70px;
+    }
+
+    .content {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .box-imagem,
+    .box-texto {
+        width: 100%;
+        height: auto;
+    }
+
+    .box-texto>p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 /*Fim Informações web*/
