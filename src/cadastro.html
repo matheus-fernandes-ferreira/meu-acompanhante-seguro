@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,11 @@
     <title>Cadastro de Acompanhante</title>
     <link rel="stylesheet" href="../src/assets/css/cadastro.css">
     <link rel="stylesheet" href="../src/assets/css/reset.css">
-    <script defer src="/src/assets/js/hamburger.js"></script>
-    <script defer src="/src/assets/js/acessibilidade.js"></script>
-    <script defer src="/src/assets/js/modo_escuro.js"></script>
-    <script defer src="/src/assets/js/texto_acessibilidade.js"></script>
+    <script defer src="../src/assets/js/hamburger.js"></script>
+    <script defer src="../src/assets/js/acordeon.js"></script>
+    <script defer src="../src/assets/js/acessibilidade.js"></script>
+    <script defer src="../src/assets/js/darkmode.js"></script>
+    <script defer src="../src/assets/js/tamanho-fonte.js"></script>
     
 </head>
 
@@ -18,37 +19,72 @@
 
     <!--Começo cabeçalho-->
     <header>
-        <img class="logo" src="../src/assets/imagem_cadastro/24.png" alt="logo aqui" title="logo meu acompanhate">
         <nav class="nav">
             <ul class="nav-list">
-                <li><a href="principal-page.html">Inicio</a></li>
-                <li><a href="">Quem Somos</a></li>
+                <li><a href="./principal-page.html">
+                        <img class="logo" src="../src/assets/Icones_projeto/24.svg" alt="logo aqui">
+                    </a></li>
+                <li><a href="">Inicio</a></li>
+                <li><a href="sobre-nos.html">Quem Somos</a></li>
                 <li><a href="">Notícias</a></li>
                 <li><a href="">Contato</a></li>
             </ul>
-            </ul>
+
+
+
+
+            <div class="nav-direita">
+                <ul class="nav-list-direita">
+                    <li> <a id="Entrar" href="../src/login-Matheus.html">Entrar</a></li>
+                    <li> <button class="btn-accessibilidade" title="Configurações de acessibilidade">
+                            <img class="img-accessibilidade" src="../src/assets/Icones_projeto/14.png"
+                                alt="Acessibilidade">
+                        </button></li>
+                    <button class="hamburger">
+                        <img class="img-hamburger" src="../src/assets/Icones_projeto/12.png" alt="">
+                    </button>
+                </ul>
+            </div>
         </nav>
 
-        <div class="area-acessibilidade">
-            <button class="btn-accessibilidade" title="Configurações de acessibilidade">
-                <img class="img-accessibilidade" src="../src/assets/Icones_projeto/14.png" alt="Acessibilidade">
-            </button>
-            <button class="hamburger">
-                <img class="img-hamburger" src="./assets/imagem_cadastro/12.png" alt="">
-            </button>
-        </div>
     </header>
+    <!--Fim parte superior da página-->
 
-    <!--Começo Menu flutuante-->
+    <!--------------------------Começo Menu flutuante------------------->
+
     <span class="menu-acessibilidade">
         <div class="botoes-acessibilidade-menu">
-            <button id="aumentar-texto" onclick="aumentarTexto()">Aumentar Texto</button>
-            <button id="dark-mode-toggle">Alternar Modo</button>
+
+            <div class="txtbtn1">
+                <div class="txtmodoesc">MODO ESCURO</div>
+                <div class="btn-modo-dark">
+                    <input type="checkbox" name="darkmode" id="darkmode">
+                    <label id="darktg" for="darkmode"></label>
+                </div>
+
+            </div>
+
+
+
+            <div class="txtbtn1">
+                <div class="txtmodoesc">NARRADOR DE TEXTO</div>
+                <div class="btn-aumentar-texto">
+                    <input type="checkbox" name="narrador" id="narrador">
+                    <label id="narradortg" for="narrador"></label>
+                </div>
+            </div>
+
+            <div class="txtbtn1">
+                <div class="txtmodoesc">AUMENTAR TEXTO</div>
+                <div class="btn-narrador-de-texto">
+                    <input type="checkbox" name="aumentar-texto" id="slider-texto">
+                    <label id="slidertextortg" for="slider-texto"></label>
+                </div>
+            </div>
+
         </div>
     </span>
-    <!--Fim menu flutuante-->
-
-    <!--Fim cabeçalho-->
+    <input type="range" id="tamanhoTexto" min="10" max="32" value="16">
 
     <!--começa corpo-->
 
@@ -87,12 +123,6 @@
             </div>
     </main>
 
-
-    
-
-    <script src="./assets/cadastro_js/modo_escuro.js"></script>
-    <script src="./assets/cadastro_js/menu_acessibilidade.js"></script>
-    <script src="./assets/cadastro_js/texto_acessibilidade.js"></script>
 </body>
 
 </html>

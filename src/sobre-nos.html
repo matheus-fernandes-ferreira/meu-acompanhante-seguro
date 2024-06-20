@@ -4,45 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style-sobre-nos.css">
-    <script src="./assets/js/leitor.js" defer></script>
-    <script defer src="../src/assets/js/acessibilidade.js"></script>
-
     <title>Sobre nós</title>
+    
+    <link rel="stylesheet" href="./assets/css/style-sobre-nos.css">    
+    <script defer src="../src/assets/js/hamburger.js"></script>
+    <script defer src="../src/assets/js/acessibilidade.js"></script>
+    <script defer src="../src/assets/js/darkmode.js"></script>
+    <script defer src="../src/assets/js/tamanho-fonte.js"></script>
+
 </head>
 
 <body>
     <!--Inicio parte superior da página-->
+    <!--Inicio parte superior da página-->
     <header>
-        <img class="logo" src="../src/assets/Icones_projeto/24.png" alt="logo aqui">
         <nav class="nav">
-
             <ul class="nav-list">
-                <li><a href="principal-page.html">Inicio</a></li>
-                <li><a href="sobre-nos.html">Quem Somos</a></li>
+                <li><a href="./principal-page.html">
+                        <img class="logo" src="../src/assets/Icones_projeto/24.svg" alt="logo aqui">
+                    </a></li>
+                <li><a href="./principal-page.html">Inicio</a></li>
+                <li><a href="./sobre-nos.html">Quem Somos</a></li>
                 <li><a href="">Notícias</a></li>
                 <li><a href="">Contato</a></li>
             </ul>
+
+
+
+
+            <div class="nav-direita">
+                <ul class="nav-list-direita">
+                    <li> <a id="Entrar" href="../src/login-Matheus.html">Entrar</a></li>
+                    <li> <button class="btn-accessibilidade" title="Configurações de acessibilidade">
+                            <img class="img-accessibilidade" src="../src/assets/Icones_projeto/14.png"
+                                alt="Acessibilidade">
+                        </button></li>
+                    <button class="hamburger">
+                        <img class="img-hamburger" src="../src/assets/Icones_projeto/12.png" alt="">
+                    </button>
+                </ul>
+            </div>
         </nav>
 
-        
-        <div class="area-acessibilidade">
-            <button class="btn-accessibilidade" title="Configurações de acessibilidade">
-                <img class="img-accessibilidade" src="../src/assets/Icones_projeto/14.png" alt="Acessibilidade">
-            </button>
-            <button class="hamburger">
-                <img class="img-hamburger" src="../src/assets/Icones_projeto/12.png" alt="">
-            </button>
-
-            
-        </div>
-
-        
     </header>
     <!--Fim parte superior da página-->
 
     <!--------------------------Começo Menu flutuante------------------->
-    
+
+    <span class="menu-acessibilidade">
+        <div class="botoes-acessibilidade-menu">
+
+            <div class="txtbtn1">
+                <div class="txtmodoesc">MODO ESCURO</div>
+                <div class="btn-modo-dark">
+                    <input type="checkbox" name="darkmode" id="darkmode">
+                    <label id="darktg" for="darkmode"></label>
+                </div>
+
+            </div>
+
+
+
+            <div class="txtbtn1">
+                <div class="txtmodoesc">NARRADOR DE TEXTO</div>
+                <div class="btn-aumentar-texto">
+                    <input type="checkbox" name="narrador" id="narrador">
+                    <label id="narradortg" for="narrador"></label>
+                </div>
+            </div>
+
+            <div class="txtbtn1">
+                <div class="txtmodoesc">AUMENTAR TEXTO</div>
+                <div class="btn-narrador-de-texto">
+                    <input type="checkbox" name="aumentar-texto" id="slider-texto">
+                    <label id="slidertextortg" for="slider-texto"></label>
+                </div>
+            </div>
+
+        </div>
+    </span>
+    <input type="range" id="tamanhoTexto" min="10" max="32" value="16">
+    <!--Fim parte superior da página-->
+
+    <!--------------------------Começo Menu flutuante------------------->
+
     <span class="menu-acessibilidade">
         <div class="botoes-acessibilidade-menu">
             <div class="trilho">
@@ -58,7 +103,7 @@
                 <input type="checkbox" name="darkmode" id="darkmode">
                 <label id="darktg" for="darkmode"></label>
             </div>
-           
+
             <div class="btn-aumentar-texto">
                 <input type="checkbox" name="darkmode" id="darkmode">
                 <label id="darktg" for="darkmode"></label>
@@ -82,29 +127,43 @@
                 <div class='texto-SN' data-reading="false">
                     <p>
                         Acompanhante Seguro: Conscientizando Acompanhantes para um Ambiente Hospitalar Mais Seguro
-                        O Acompanhante Seguro é um site criado com o objetivo de conscientizar e orientar acompanhantes de pacientes hospitalizados sobre a importância da higienização e de outras medidas de segurança para garantir a saúde de todos no ambiente hospitalar.
+                        O Acompanhante Seguro é um site criado com o objetivo de conscientizar e orientar acompanhantes
+                        de pacientes hospitalizados sobre a importância da higienização e de outras medidas de segurança
+                        para garantir a saúde de todos no ambiente hospitalar.
 
                         Nossa missão:
 
-                        Promover a cultura da segurança e da higiene nos hospitais através da conscientização de acompanhantes.
-                        Oferecer informações confiáveis e atualizadas sobre as melhores práticas de higienização e prevenção de infecções.
+                        Promover a cultura da segurança e da higiene nos hospitais através da conscientização de
+                        acompanhantes.
+                        Oferecer informações confiáveis e atualizadas sobre as melhores práticas de higienização e
+                        prevenção de infecções.
                         Orientar acompanhantes sobre seus direitos e responsabilidades no ambiente hospitalar.
-                        Contribuir para um ambiente hospitalar mais seguro para pacientes, acompanhantes e profissionais da saúde.
+                        Contribuir para um ambiente hospitalar mais seguro para pacientes, acompanhantes e profissionais
+                        da saúde.
                         No site Acompanhante Seguro, você encontra:
 
-                        Informações sobre a importância da higienização: Explicamos por que a higienização é crucial em ambientes hospitalares e como ela pode prevenir infecções e surtos de doenças.
-                        Dicas de higiene para acompanhantes: Orientamos sobre como lavar as mãos corretamente, usar álcool em gel, evitar tocar o rosto, manter as unhas curtas e limpas, usar máscara quando necessário, descartar lixo em lixeiras apropriadas e limpar superfícies com frequência.
-                        Orientações sobre outros cuidados importantes: Esclarecemos sobre a importância de evitar contato com pacientes com doenças contagiosas, manter o quarto do paciente organizado, seguir as instruções da equipe hospitalar e respeitar o descanso dos pacientes.
-                        Materiais informativos: Disponibilizamos folhetos, cartazes e vídeos com informações sobre higiene e segurança no ambiente hospitalar.
-                        Canal de comunicação: Abrimos um canal para que você possa tirar dúvidas, enviar sugestões e compartilhar suas experiências como acompanhante.
-                        Acreditamos que a conscientização é fundamental para a segurança no ambiente hospitalar. Ao se informar e seguir as medidas de higiene e segurança adequadamente, você contribui para a saúde de todos.
+                        Informações sobre a importância da higienização: Explicamos por que a higienização é crucial em
+                        ambientes hospitalares e como ela pode prevenir infecções e surtos de doenças.
+                        Dicas de higiene para acompanhantes: Orientamos sobre como lavar as mãos corretamente, usar
+                        álcool em gel, evitar tocar o rosto, manter as unhas curtas e limpas, usar máscara quando
+                        necessário, descartar lixo em lixeiras apropriadas e limpar superfícies com frequência.
+                        Orientações sobre outros cuidados importantes: Esclarecemos sobre a importância de evitar
+                        contato com pacientes com doenças contagiosas, manter o quarto do paciente organizado, seguir as
+                        instruções da equipe hospitalar e respeitar o descanso dos pacientes.
+                        Materiais informativos: Disponibilizamos folhetos, cartazes e vídeos com informações sobre
+                        higiene e segurança no ambiente hospitalar.
+                        Canal de comunicação: Abrimos um canal para que você possa tirar dúvidas, enviar sugestões e
+                        compartilhar suas experiências como acompanhante.
+                        Acreditamos que a conscientização é fundamental para a segurança no ambiente hospitalar. Ao se
+                        informar e seguir as medidas de higiene e segurança adequadamente, você contribui para a saúde
+                        de todos.
 
                         Visite o site Acompanhante Seguro e faça parte dessa iniciativa!
 
                         Juntos, podemos construir um ambiente hospitalar mais seguro e saudável para todos!
 
                         Além do site, você também pode acompanhar o Acompanhante Seguro nas redes sociais:
-                        
+
                     <div class="icones-redes-sobrenos">
 
                         <div class="redes-sociais-sobrenos">
@@ -120,12 +179,13 @@
                         </div>
 
                     </div>
-                        <p>
-                            Compartilhe esse site com seus amigos e familiares que são acompanhantes de pacientes hospitalizados. Quanto mais pessoas forem conscientizadas, melhor!
-                        </p>
-                       
+                    <p>
+                        Compartilhe esse site com seus amigos e familiares que são acompanhantes de pacientes
+                        hospitalizados. Quanto mais pessoas forem conscientizadas, melhor!
                     </p>
-</div>
+
+                    </p>
+                </div>
 
                 <div class="img-SN">
                     <img src="./assets/Imagens_projeto/4.png" alt="">
