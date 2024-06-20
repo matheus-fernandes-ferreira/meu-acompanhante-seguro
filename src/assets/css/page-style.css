@@ -663,7 +663,7 @@ header {
 }
 
 #carrosel-destaque {
-    display: flex;
+    display: none;
 }
 
 .Banner-destaque {
@@ -1388,12 +1388,7 @@ footer {
     }
 
     .Banner-destaque {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 720px;
-        height: 300px;
+       display: none;
     }
 
     .txt-banner {
@@ -1732,11 +1727,11 @@ footer {
     }
 
     #carrosel-destaque {
-        border: red solid;
         display: flex;
         flex-direction: row;
-        width: 400px;
-        height: 400px;
+        justify-content: center;
+        width: 884px;
+        height: 500px;
     }
 
     .carousel-caption {
@@ -2054,11 +2049,10 @@ footer {
     }
 
     #carrosel-destaque {
-        border: red solid;
         display: flex;
         flex-direction: row;
-        width: 400px;
-        height: 400px;
+        width: 800px;
+        height: 500px;
     }
 
     .carousel-caption {
@@ -2386,11 +2380,10 @@ footer {
     }
 
     #carrosel-destaque {
-        border: red solid;
         display: flex;
         flex-direction: row;
-        width: 400px;
-        height: 400px;
+        width: 420px;
+        height: 300px;
     }
 
     .carousel-caption {
@@ -2721,10 +2714,9 @@ footer {
     }
 
     #carrosel-destaque {
-        border: red solid;
         display: flex;
         flex-direction: row;
-        width: 400px;
+        width: 360px;
         height: 400px;
     }
 
