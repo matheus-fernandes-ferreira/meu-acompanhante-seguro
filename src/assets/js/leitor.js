@@ -11,8 +11,8 @@ botaoPlay.addEventListener('click', () => {
 //============================================
 //Script para adicionar a funcionalidade do botao de acessibilidade
 let ligar = true;
-const acessibilidadeBtn = document.querySelector('.btn-leitor-de-texto');
-const trilho = document.querySelector('.trilho');
+const acessibilidadeBtn = document.querySelector('#narrador');
+const trilho = document.querySelector('.btn-aumentar-texto');
 const botaoplay = document.querySelector('.ler-button');
 
 acessibilidadeBtn.addEventListener('click', () => {
