@@ -13,10 +13,12 @@
     <script defer src="../src/assets/js/acordeon.js"></script>
     <script defer src="../src/assets/js/acessibilidade.js"></script>
     <script defer src="../src/assets/js/darkmode.js"></script>
+    <script defer src="../src/assets/js/tamanho-fonte.js"></script>
 
 </head>
 
 <body>
+    
     <!--Inicio parte superior da página-->
     <header>
         <nav class="nav">
@@ -77,14 +79,22 @@
             <div class="txtbtn1">
                 <div class="txtmodoesc">AUMENTAR TEXTO</div>
                 <div class="btn-narrador-de-texto">
-                    <input type="checkbox" name="narrador" id="narrador">
-                    <label id="darktg" for="narrador"></label>
+                    <input type="checkbox" name="aumentar-texto" id="slider-texto">
+                    <label id="slidertextortg" for="slider-texto"></label>
                 </div>
             </div>
 
         </div>
     </span>
+    <input type="range" id="tamanhoTexto" min="10" max="32" value="16">
     <!-----------------------------Fim menu flutuante--------------------->
+
+
+    <!-----------------------------Aumentar texto flutuante--------------------->
+    
+
+    <!-----------------------------Aumentar texto flutuante--------------------->
+
 
     <!------------------------------Começo banner------------------------->
     <section class="banner">
@@ -103,9 +113,10 @@
                 </p>
             </div>
         </div>
+        
     </section>
     <!-------------------------Termino banner------------------------------->
-
+    
     <!-------------------------Acordeon------------------------------->
 
     <section class="sec-menu-content">
@@ -252,7 +263,7 @@
 
     <!---------------------------------acordeon-------------------------------------->
 
-
+    
     <!---------------------------------Inicio parte principal da página------------------------------->
     <main id="pagina-principal">
 
@@ -265,14 +276,14 @@
                 </p>
             </div>
             <br><br>
-    
+
             <div class='content'>
                 <div class='box-imagem'>
                     <img src="./assets/Icones_projeto/26.png" alt="texto_alternativo">
                 </div>
-    
-    
-    
+
+
+
                 <div class='box-texto'>
                     <p>
                         Este site foi criado para te auxiliar durante a internação de seu ente querido no hospital,
@@ -281,33 +292,35 @@
                     </p>
                 </div>
             </div>
-    
+
             <div class='content'>
                 <div class='box-texto'>
                     <p>
                         Aqui você encontrará tudo o que precisa saber sobre o uso correto de equipamentos de proteção
-                        individual (EPIs), como máscaras, luvas e aventais, além de dicas valiosas sobre higiene pessoal e
+                        individual (EPIs), como máscaras, luvas e aventais, além de dicas valiosas sobre higiene pessoal
+                        e
                         medidas de segurança para prevenir contaminações no ambiente hospitalar.
                     </p>
                 </div>
-    
+
                 <div class='box-imagem'>
                     <img src="./assets/Icones_projeto/27.png" alt="texto_alternativo">
                 </div>
             </div>
-    
-    
+
+
             <div class='content'>
                 <div class='box-imagem'>
                     <img src="./assets/Icones_projeto/28.png" alt="texto_alternativo">
                 </div>
-    
+
                 <div class='box-texto'>
                     <p>
-                        Nosso objetivo é tornar a experiência de acompanhante mais segura e tranquila para você e para todos
+                        Nosso objetivo é tornar a experiência de acompanhante mais segura e tranquila para você e para
+                        todos
                         ao seu redor. Navegue pelo nosso site e encontre as informações que você precisa para se manter
                         protegido e apoiar seu ente querido durante esse momento importante.
-    
+
                     </p>
                 </div>
             </div>
@@ -405,6 +418,7 @@
         <button class="ler-button"> </button>
     </div>
     <script src="../src/assets/js/leitor.js"></script>
+    
 </body>
 <!------------------------------------Inicio rodape---------------------------------------------->
 <footer>

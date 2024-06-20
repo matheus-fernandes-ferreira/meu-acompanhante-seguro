@@ -7,7 +7,15 @@
 }
 
 /*Web*/
-
+#tamanhoTexto{
+ display: none;
+}
+#tamanhoTexto.active{
+    display: flex;
+    position: fixed;
+    margin-top: 30%;
+    width: 500px;
+}
 
 
 /* botao play  - por padrão ele não é exibido*/
@@ -53,10 +61,6 @@ body::-webkit-scrollbar-thumb {
     background-color: #163958;
 }
 
-html {
-    font-size: 62.5%;
-
-}
 
 
 body {
@@ -66,7 +70,9 @@ body {
     background-color: #f8f9fa;
 }
 
-
+html{
+    font-size: 16px;
+}
 
 /*Comerço barra navegação*/
 
@@ -107,7 +113,6 @@ header {
 .nav-list a {
     display: flex;
     text-decoration: none;
-    font-size: 2rem;
     color: #fff;
     align-items: center;
     justify-content: center;
@@ -135,7 +140,6 @@ header {
 .nav-list-direita a {
     display: flex;
     text-decoration: none;
-    font-size: 2rem;
     color: #fff;
     align-items: center;
     justify-content: center;
@@ -162,7 +166,6 @@ header {
 #Entrar {
     text-decoration: none;
     color: white;
-    font-weight: 500;
 }
 
 #Entrar:hover {
@@ -218,7 +221,6 @@ header {
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
-    font-size: 16px;
     height: 50px;
     width: 100px;
 
@@ -406,7 +408,6 @@ header {
     border: none;
     background-color: #1C486F;
     color: white;
-    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -451,7 +452,6 @@ header {
 
 
 .menu-item h2 {
-    font-size: 3rem;
     margin-bottom: 10px;
     display: flex;
     padding-top: 20px;
@@ -461,7 +461,6 @@ header {
 
 .menu-item p {
     display: flex;
-    font-size: 1.6rem;
     margin: 40px;
 }
 
@@ -506,7 +505,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1rem;
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
@@ -516,7 +514,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -805,6 +802,56 @@ footer {
     display: flex;
     align-items: center;
 }
+
+/*Botao de ativar slider texto*/
+#slidertextortg {
+    margin: 0;
+    width: 50px;
+    height: 20px;
+    position: relative;
+    display: block;
+    background: #bebebe;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+        inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 1s;
+}
+
+#slidertextortg:after {
+    content: " ";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: linear-gradient(180deg, #b80606, #3a3a3a);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+    background-position: center center;
+    background-size: cover;
+}
+
+#slider-texto {
+    width: 0;
+    height: 0;
+    visibility: hidden
+}
+
+#slider-texto:checked+#slidertextortg:after {
+    left: 47px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #ffcc89, #447231);
+    background-position: center center;
+    background-size: cover;
+
+}
+
+/*Botao de ativar slider texto*/
+
+
+
 
 @media only screen and (max-width: 1280px) {
 
