@@ -61,7 +61,7 @@ div{
 
 [type="range"]::-webkit-slider-thumb{
     appearance: none;
-    height: 30px;
+    height: 20px;
     width: 20px;
     border-radius: 3px;
     border: 1px solid #ffffff;
@@ -141,7 +141,7 @@ header {
     display: flex;
     flex-direction: row;
     width: 1440px;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 
@@ -268,6 +268,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     color: white;
     font-weight: 500;
     height: 50px;
@@ -371,7 +372,7 @@ header {
 
 .texto-banner {
     background-color: #1C486F;
-    color: #FBE8E8;
+    color: #ffffff;
     width: 450px;
     height: 200px;
     text-align: center;
@@ -589,31 +590,6 @@ header {
 }
 
 
-/*Responsividade */
-@media (max-width: 768px) {
-
-    /* telas menores que 768px (tablets and mobiles) */
-    .sessao-nav {
-        height: 70px;
-    }
-
-    .content {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
-
-    .box-imagem,
-    .box-texto {
-        width: 100%;
-        height: auto;
-    }
-
-    .box-texto>p {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
 
 /*Fim Informações web*/
 
@@ -710,6 +686,26 @@ body.dark-mode {
     color: #ffffff;
 }
 
+.dark-mode footer {
+    background: #15131b;
+}
+
+.dark-mode .sec-menu-content{
+    background: #15131b;
+}
+
+.dark-mode .container-content{
+    background: #222222;
+}
+
+.dark-mode .menu-item{
+    background: #222222;
+}
+
+.dark-mode .menu-acessibilidade.active{
+    background: #15131b;
+}
+
 /*Fim Darkmode*/
 
 /*Começo rodape*/
@@ -721,9 +717,7 @@ footer {
     width: 100%;
 }
 
-.dark-mode footer {
-    background: #15131b;
-}
+
 
 /*Botao darkmode*/
 #darkmode {
@@ -863,6 +857,7 @@ footer {
         inset 0px -5px 15px rgba(255, 255, 255, 0.4);
     cursor: pointer;
     transition: 1s;
+    margin-bottom: 25px;
 }
 
 #slidertextortg:after {
@@ -895,11 +890,38 @@ footer {
 
 }
 
+
+
+
+
 /*Botao de ativar slider texto*/
 
 
 
 @media only screen and (max-width: 360px) {
+
+       /* telas menores que 768px (tablets and mobiles) */
+       .sessao-nav {
+        height: 70px;
+    }
+
+    .content {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .box-imagem,
+    .box-texto {
+        width: 100%;
+        height: auto;
+    }
+
+    .box-texto>p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .menu-item {
         width: 100%;
         text-align: justify;
@@ -936,8 +958,7 @@ footer {
 
     ul {
         list-style: none;
-    }
-
+     }
     /*Config*/
 
 
@@ -953,13 +974,14 @@ footer {
         justify-content: center;
         align-items: center;
         top: 60%;
-        right: 23px;
+        right: 19px;
         width: 90vw;
-        height: 200px;
+        height: 270px;
         background: #163958;
         border-radius: 15px;
         transition: 0.2s ease-in;
         pointer-events: none;
+        z-index: 2;
     }
 
 
@@ -988,23 +1010,49 @@ footer {
     .nav-list {
         position: absolute;
         display: flex;
+        flex-direction: column;
         right: 0px;
-        top: 69px;
+        top: 11.8%;
         width: 200px;
         height: 350px;
         background: #1C486F;
         clip-path: circle(100px at 100% -55%);
         transition: 0.5s ease-in-out;
         padding: 5%;
-        justify-content: center;
-        text-align: center;
         flex-direction: column;
         pointer-events: none;
         border-bottom-left-radius: 25px;
+        gap: 40px;
+        margin: 0;
     }
 
+    .nav {
+        display: flex;
+        flex-direction: row;
+        width: 1440px;
+        justify-content: space-between;
+    }
+    
+    .nav-list li {
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+    }
+    
     .nav-list a {
-        font-size: 20px;
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-list a:hover {
+        color: #ffe159;
+        text-decoration: none;
     }
 
     .nav-list li:nth-child(1) a {
@@ -1047,24 +1095,30 @@ footer {
 
     .seja-bem-vindo-banner {
         display: flex;
-        width: 350px;
-        height: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seja-bem-vindo-banner img {
+        width: 100%;
     }
 
     .container-banner {
         display: flex;
         width: 100%;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    }
+
+    .background-info-banner{
+        display: flex;
+        margin-right: 11%;
     }
 
     .texto-banner {
         display: flex;
         background-color: #1C486F;
         color: #FBE8E8;
-        width: 90vw;
-        height: 60vw;
+        width: 100%;
         justify-content: center;
         text-align: center;
         align-items: center;
@@ -1074,128 +1128,7 @@ footer {
 
     /*--Cemeço arcodeon mobile--*/
 
-    /*Oculta o acordeon desktop*/
-    #desktop-menu-acordeon {
-        display: none;
-    }
-
-    /*Section do acordeon mobile*/
-    .mobile-menu-acordeon {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    /*Parte exterior do acordion mobile*/
-    .acordeon-mobile {
-        display: flex;
-        align-items: center;
-        background-color: #1C486F;
-        color: #ffffff;
-        cursor: pointer;
-        width: 100%;
-        height: 75px;
-        border: none;
-        padding: 0%;
-        font-size: 15px;
-        transition: 0.4s;
-        margin-bottom: 1%;
-    }
-
-    .fundo-icone-mb {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20%;
-        height: 75px;
-        background-color: #FFBD59;
-    }
-
-    .icone-acordeon-mb {
-        width: 50px;
-        height: 50px;
-    }
-
-    .acordeon-mobile h1 {
-        margin-left: 3%;
-        font-size: 20px;
-    }
-
-    /*Quando o acordeon estiver ativo*/
-    .active,
-    .acordeon-mobile:hover {
-        background-color: #FFBD59;
-        color: #1C486F;
-    }
-
-    /*Corpo do aordeon expandido*/
-    .painel {
-        display: none;
-        flex-direction: column;
-        background-color: rgb(183, 24, 24);
-        padding: 10%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .painel p {
-        width: 100%;
-    }
-
-    .img-acordeon-mobile {
-        width: 40%;
-    }
-
-    /*Fim arcodeon mobile*/
-
-
-    div .seja-bem-vindo-banner img {
-        width: 100%;
-    }
-
-    /*Fim Banner superior*/
-
-
-    /*Começo Informmações*/
-    #pagina-principal {
-        height: 2500px;
-    }
-
-    #informacao {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    #info {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .img-info {
-        width: 100%;
-    }
-
-    #img1 {
-        border: 1px solid rgb(255, 0, 204);
-        height: 200px;
-    }
-
-    .bem-vindo {
-        padding: 5px;
-        margin-bottom: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .bem-vindo h2 {
-        display: flex;
-        justify-content: center;
-    }
-
-    /*Fim Informações*/
+    
 
     /*Começo destaque*/
     .nomedistaque {
@@ -1231,11 +1164,34 @@ footer {
         font-size: small;
     }
 
-    /*Fim destaque*/
+    #tamanhoTexto{
+        display: none;
+       }
+       #tamanhoTexto.active{
+           display: flex;
+           position: fixed;
+           margin-top: 200%;
+           right: 30%;
+           z-index: 3;
+       }
 
 
-    /*Começo rodape*/
-   
-
-    /*Fim rodape*/
+    [type="range"]{
+        transform: scale(1.5);
+        appearance: none;
+        border-radius: 5px;
+        padding: 2px;
+        background-color: #FFBD59;
+        border: solid 1px #163958;
+    }
+    
+    [type="range"]::-webkit-slider-thumb{
+        appearance: none;
+        height: 20px;
+        width: 20px;
+        border-radius: 3px;
+        border: 1px solid #ffffff;
+        background-color: #1C486F;
+    }
+    
 }
