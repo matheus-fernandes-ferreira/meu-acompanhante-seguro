@@ -1439,6 +1439,7 @@ footer {
         text-align: center;
         padding-left: 50px;
         padding-right: 50px;
+        font-size: 1.6rem;
     }
     
     .title-bemVindo {
@@ -1560,12 +1561,12 @@ footer {
     
     .dark-mode .title-bemVindo p span {
         background-color: #15131b;
-        font-size: 18px;
+        font-size: 1.8rem;
     }
     
     .dark-mode p {
         color: #ffffff;
-        font-size: 14px;
+        font-size: 1.4rem;
     }
     
     .dark-mode footer {

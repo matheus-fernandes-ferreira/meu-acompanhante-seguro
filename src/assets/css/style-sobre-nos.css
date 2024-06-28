@@ -34,7 +34,6 @@ div{
 }
 
 
-
 /*Web*/
 #tamanhoTexto{
  display: none;
@@ -118,7 +117,7 @@ body {
 }
 
 html{
-    font-size: 16px;
+    font-size: 62.5%;
 }
 
 /*Comerço barra navegação*/
@@ -532,7 +531,7 @@ header {
 
 .main-SN {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     width: 85vw;
 }
@@ -544,12 +543,12 @@ header {
 
 
 .texto-SN {
-    width: 50%;
+    width: 80%;
     padding-right: 50px;
 }
 
 .texto-SN p {
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: justify;
     line-height: 1.5em;
 }
@@ -572,7 +571,9 @@ header {
 
 
 .img-SN {
-    width: 50%;
+    width: 80%;
+    display: flex;
+
 }
 .img-SN img {
     width: 100%;
@@ -641,4 +642,17 @@ header {
     background-image: url(/src/assets/Icones_projeto/twitter-svgrepo-com.svg);
     background-size: 100% 100%;
     cursor: pointer;
+}
+
+/* ----------------------Início dark-mode---------------------- */
+
+ body.dark-mode {
+    background-color: #222222;
+    color: #ffffff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode header {
+    background-color: #15131b;
+    color: #ffffff;
 }
