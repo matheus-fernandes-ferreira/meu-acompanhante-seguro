@@ -342,7 +342,7 @@ header {
     border-radius: 5px;
     transition: 0.2s ease-in;
     pointer-events: none;
-    z-index: 100;
+    z-index: 10;
 }
 
 /*Botao darkmode*/
@@ -662,6 +662,11 @@ header {
 
 
 @media only screen and (max-width: 884px) {
+    .menu-acessibilidade.active {
+        z-index: 1;
+    }
+
+
 
     /*Começo Hamburger*/
     .hamburger {
@@ -834,6 +839,10 @@ header {
         padding: 0px;
     }
 
+    .menu-acessibilidade.active {
+        z-index: 1;
+    }
+
 
     .container-login {
         display: flex;
@@ -870,7 +879,8 @@ header {
         border-top-right-radius: 200px;
         justify-content: center;
     }
-    .box-login h1{
+
+    .box-login h1 {
         padding-top: 150px;
     }
 
@@ -958,6 +968,9 @@ header {
         padding: 0px;
     }
 
+    .menu-acessibilidade.active {
+        z-index: 1;
+    }
 
     .container-login {
         display: flex;
@@ -993,8 +1006,10 @@ header {
         background-color: white;
         border-top-right-radius: 200px;
         justify-content: center;
+        z-index: 0;
     }
-    .box-login h1{
+
+    .box-login h1 {
         padding-top: 150px;
     }
 
