@@ -663,7 +663,7 @@ header {
 
 @media only screen and (max-width: 884px) {
     .menu-acessibilidade.active {
-        z-index: 1;
+        z-index: 2;
     }
 
 
@@ -705,6 +705,7 @@ header {
         border-bottom-left-radius: 25px;
         gap: 60px;
         margin: 0;
+        z-index: 2;
     }
 
     .dark-mode .nav-list {
@@ -834,7 +835,7 @@ header {
     }
 
     header {
-        width: 100cwx;
+        width: 100vw;
         height: 10%;
         padding: 0px;
     }
@@ -963,7 +964,7 @@ header {
     }
 
     header {
-        width: 100cwx;
+        width: 100vw;
         height: 10%;
         padding: 0px;
     }

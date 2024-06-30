@@ -102,7 +102,7 @@ div {
     border-width: 27px;
     border-color: transparent;
     background-color: #202020;
-    transition: 400ms;
+    transition: 40ms;
 }
 
 
@@ -360,16 +360,15 @@ header {
 
 
 .texto-banner {
-    background-color: #0c355a;
     color: #ffffff;
-    width: 380px;
-    height: 200px;
+    font-weight: 500;
     text-align: center;
     align-content: center;
     padding: 10px;
     border-radius: 5px;
     margin-left: 40px;
-    z-index: 0;
+    font-size: 0.9rem;
+    background-color: #0c355a;
 }
 
 
@@ -380,36 +379,7 @@ header {
     justify-content: center;
 }
 
-.banner-top {
-    width: 100vw;
-    height: 70vh;
-    border: 5px solid blue;
-}
 
-.banner-bck {
-    width: 100%;
-    height: 100%;
-}
-
-.menu-item p {
-    width: 85%;
-    text-align: justify;
-    padding-top: 20px;
-    text-align: justify;
-
-}
-
-
-.banner-content {
-    display: flex;
-    flex-direction: row;
-}
-
-.parte-logo {
-    width: 30%;
-    height: 100%;
-    border: 5px solid red;
-}
 
 /*Fim Banner superior*/
 
@@ -436,15 +406,6 @@ header {
     grid-template-columns: repeat(4, 1fr);
     /* Define 4 colunas de larguras iguais */
     gap: 0px;
-}
-
-.dark-mode .btn-menu {
-    background-color: #37363a;
-}
-
-.dark-mode .title-bemVindo p span {
-    font-size: 1.6rem;
-    background-color: #000000;
 }
 
 .dark-mode .sec-menu-content {
@@ -533,10 +494,12 @@ header {
 .content {
     display: flex;
     flex-direction: row;
+    align-items: center;
     display: flex;
-    width: 700px;
-    height: 200px;
+    width: 800px;
+    margin-bottom: 20px;
 }
+
 
 .box-imagem {
     display: flex;
@@ -550,18 +513,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 100%;
     height: 100%;
+    font-size: 1.4rem;
 }
 
-.box-texto>p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-}
 
 .title-bemVindo {
     display: flex;
@@ -615,25 +574,17 @@ header {
     color: rgba(28, 72, 111, 1);
 }
 
+.destaques h1{
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
 #alinhamento-destaque {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    height: 450px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-
-.destaque {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    height: 300px;
-    width: 200px;
-}
-
-#destaque-img {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
 .imgdest {
@@ -663,16 +614,31 @@ header {
     padding: 10px;
     color: rgba(28, 72, 111, 1);
     width: 400px;
-    height: 280px;
+}
+
+.txt-banner h2{
+    font-size: 1.4rem;
+}
+
+.txt-banner p{
+    font-size: 1.2rem;
 }
 
 /*Fim destaque web*/
 
 /*Começo Darkmode*/
 body.dark-mode {
-    background-color: #222222;
+    background-color: #282828;
     color: #ffffff;
     transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode .ler-button {  
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.dark-mode .ler-button.on {
+    background-color: #ffffff;
 }
 
 .dark-mode header {
@@ -681,19 +647,20 @@ body.dark-mode {
 }
 
 .dark-mode .title-bemVindo p span {
-    background-color: #15131b;
-    font-size: 18px;
+    background-color: #0c355a;
 }
 
-.dark-mode p {
-    color: #ffffff;
-    font-size: 14px;
+.dark-mode .btn-menu {
+    background-color: #15131b;
+}
+
+.dark-mode .btn-menu:hover {
+    background-color: #FFBD59;
 }
 
 .dark-mode footer {
     background: #15131b;
 }
-
 
 .dark-mode .container-content {
     background: #222222;
@@ -701,6 +668,7 @@ body.dark-mode {
 
 .dark-mode .menu-item {
     background: #222222;
+    border: none;
 }
 
 .dark-mode .menu-acessibilidade.active {
@@ -711,32 +679,9 @@ body.dark-mode {
     background-color: #15131b;
 }
 
-.dark-mode .menu-item p {
-    width: 85%;
-    text-align: justify;
-    padding-top: 20px;
-    text-align: justify;
-
+.dark-mode .txt-banner {
+    color: #ffffff;
 }
-
-.dark-mode .menu-item h2 {
-    margin-bottom: 10px;
-    display: flex;
-    padding-top: 20px;
-    text-align: center;
-
-}
-
-.dark-mode .menu-item p {
-    width: 85%;
-
-    display: flex;
-    margin: 40px;
-    font-size: 1.4rem;
-
-}
-
-
 
 
 
@@ -6322,7 +6267,6 @@ footer {
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
     }
 
 
