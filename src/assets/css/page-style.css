@@ -115,6 +115,18 @@ body {
     background-color: #f8f9fa;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #163958;
+}
+
 html {
     font-family: "Chakra Petch", sans-serif;
     font-size: 16px;
@@ -138,8 +150,6 @@ header {
     width: 1440px;
     justify-content: space-between;
 }
-
-
 
 .nav-list {
     display: flex;
@@ -270,7 +280,6 @@ header {
 }
 
 .logo-img {
-
     width: 80px;
     height: 70px;
 }
@@ -1904,9 +1913,6 @@ footer {
         top: 26px;
         right: 18px;
     }
-
-
-
 
     .nav-list {
         position: absolute;
@@ -5640,7 +5646,6 @@ footer {
 
 @media only screen and (max-width: 360px) {
 
-    /* telas menores que 768px (tablets and mobiles) */
     .sessao-nav {
         height: 70px;
     }

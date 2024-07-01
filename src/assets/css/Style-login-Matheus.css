@@ -12,6 +12,22 @@ body {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 300;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C486F;
+    width: 96%;
+    height: 90px;
+    padding-inline: 2%;
 }
 
 /*Web*/
@@ -121,14 +137,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f8f9fa;
-}
-
 html {
     font-family: "Chakra Petch", sans-serif;
     font-size: 62.5%;
@@ -136,24 +144,14 @@ html {
 
 /*Comerço barra navegação*/
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1C486F;
-    width: 100%;
-    height: 90px;
-    padding-inline: 2%;
-}
+
 
 .nav {
     display: flex;
     flex-direction: row;
     width: 1440px;
-    justify-content: space-between
+    justify-content: space-between;
 }
-
-
 
 .nav-list {
     display: flex;
@@ -210,7 +208,6 @@ header {
     text-decoration: none;
 }
 
-
 .logo {
     width: 120px;
     height: 60px;
@@ -221,15 +218,6 @@ header {
     flex-direction: row;
     gap: 30px;
     justify-content: center;
-}
-
-#Entrar {
-    text-decoration: none;
-    color: white;
-}
-
-#Entrar:hover {
-    color: #ffe159;
 }
 
 
@@ -258,6 +246,7 @@ header {
     transition: 0.2s ease-in;
 }
 
+
 /*Fim da barra de navegação*/
 
 /*Começo Menu flutuante*/
@@ -280,36 +269,6 @@ header {
     font-weight: 500;
     height: 50px;
     width: 200px;
-}
-
-.sessao-nav {
-    display: flex;
-    flex-direction: row;
-    height: 70px;
-    background-color: #340505;
-}
-
-.logo-img {
-
-    width: 80px;
-    height: 70px;
-}
-
-.sessao-nav>ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 50px;
-}
-
-.sessao-nav li {
-    display: flex;
-    flex-direction: row;
-    padding-right: 20px;
-}
-
-.sessao-nav li a {
-    color: white;
 }
 
 
@@ -528,14 +487,13 @@ header {
 .container-login {
     display: flex;
     flex-direction: row;
-    width: 100vw;
-    height: 100vh;
-
+    width: 100%;
+    height: 90vh;
 }
 
 .box-img {
     width: 70vw;
-    height: 100vh;
+    height: 90.6vh;
     display: flex;
     background-image: linear-gradient(rgba(28, 72, 111, 0.8), rgba(28, 72, 111, 0.8)), url(../Imagens_projeto/2.png);
     background-position: initial;
@@ -559,7 +517,7 @@ header {
 
 .box-side-bar {
     width: 30%;
-    height: 100%;
+    height: 90.6vh;
     background-color: #FFBD59;
 }
 
@@ -577,7 +535,7 @@ header {
     transform: translate(-50%, -50%);
     /* Centraliza a div */
     background-color: white;
-    border-top-right-radius: 200px;
+    border-top-right-radius: 150px;
     z-index: 1;
 }
 
@@ -588,8 +546,6 @@ header {
     font-size: 3rem;
 
 }
-
-
 
 .box-form {
     width: 100%;
@@ -608,7 +564,7 @@ header {
     height: auto;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 5px;
     font-size: 1rem;
 }
 
@@ -632,7 +588,7 @@ header {
 .box-btn {
     width: 110px;
     height: 75px;
-    margin-top: 10%;
+    margin-top: 15%;
 
 }
 
@@ -640,11 +596,11 @@ header {
     width: 110px;
     height: 75px;
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: #FFBD59;
     background-image: url(../Icones_projeto/11.png);
     background-position: center center;
-    background-size: contain;
+    background-size: 60px;
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -661,12 +617,58 @@ header {
 /* ==================================RESPONSIVIDADE================================== */
 
 
-@media only screen and (max-width: 884px) {
-    .menu-acessibilidade.active {
-        z-index: 2;
+
+
+/* ================================================================================== */
+
+@media only screen and (max-width: 360px),(max-height: 800px){
+    body
+    {
+        width: 100%;
     }
 
 
+    header {
+        padding-inline-start: 20px;
+    }
+
+
+    .img-accessibilidade {
+        cursor: pointer;
+    }
+
+
+    .menu-acessibilidade.active {
+        display: none;
+
+    }
+
+    .menu-acessibilidade.active {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 70%;
+        right: 40px;
+        width: 90vw;
+        height: 70px;
+        background: #163958;
+        border-radius: 15px;
+        transition: 0.2s ease-in;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    .txtbtn1 {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        width: 350px;
+        padding-left: 0px;
+        padding-bottom: 0%;
+        justify-content: space-around;
+        align-items: center
+    }
 
     /*Começo Hamburger*/
     .hamburger {
@@ -687,15 +689,14 @@ header {
         right: 18px;
     }
 
-
     .nav-list {
         position: absolute;
         display: flex;
         flex-direction: column;
         right: 0px;
-        top: 6.2%;
-        width: 350px;
-        height: 550px;
+        top: 10.2%;
+        width: 200px;
+        height: 350px;
         background: #1C486F;
         clip-path: circle(100px at 100% -55%);
         transition: 0.5s ease-in-out;
@@ -703,25 +704,19 @@ header {
         flex-direction: column;
         pointer-events: none;
         border-bottom-left-radius: 25px;
-        gap: 60px;
-        margin: 0;
+        gap: 50px;
         z-index: 2;
-    }
-
-    .dark-mode .nav-list {
-        background-color: #000000;
     }
 
     .nav {
         display: flex;
         flex-direction: row;
         width: 1440px;
-        justify-content: end;
-        padding-inline-end: 20px;
+        justify-content: space-between;
     }
 
     .nav-list li {
-        width: 260px;
+        width: 190px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -759,132 +754,56 @@ header {
     }
 
     .nav.active .nav-list {
-        clip-path: circle(900px at 90% -15%);
+        clip-path: circle(850px at 90% -15%);
     }
 
     .nav.active .nav-list a {
         opacity: 1;
     }
 
-    /* Fim Hamburger */
+    /*Fim Hamburger*/
 
-    html {
-        width: 100vw;
+
+
+
+
+    .container-login {
+        display: flex;
+        flex-direction: row;
     }
 
-    /* pagina login */
+    .box-img {
+        width: 100%;
+        height: 360px;
+        background-image: linear-gradient(rgba(28, 72, 111, 0.8), rgba(28, 72, 111, 0.8)), url(../Imagens_projeto/2.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .box-login {
-        width: 610px;
-        height: 650px;
+        width: 450px;
+        height: 560px;
         display: flex;
         flex-direction: column;
         position: absolute;
+        top: 67.5%;
         left: 50%;
-        top: 65%;
-        background-color: white;
-        border-top-right-radius: 200px;
-        justify-content: center;
-    }
-
-    .box-img {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        background-image: linear-gradient(rgba(28, 72, 111, 0.8), rgba(28, 72, 111, 0.8)), url(../Imagens_projeto/2.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .box-img>h1 {
-        color: white;
-        font-size: 5rem;
-        margin-left: 150px;
-        margin-top: 75px;
-        font-weight: lighter;
-
-    }
-
-    #username {
-        width: 400px;
-        height: 30px;
-        border-radius: 100px;
-        border: 1px solid #1C486F;
-        padding: 10px;
-    }
-
-    #password {
-        width: 400px;
-        height: 30px;
-        border-radius: 100px;
-        border: 1px solid #1C486F;
-        padding: 10px;
-
-    }
-
-
-}
-
-
-/* ================================================================================== */
-
-@media only screen and (max-width: 360px) {
-    html {
-        width: 100vw;
-        height: 100VH;
-    }
-
-    header {
-        width: 100vw;
-        height: 10%;
-        padding: 0px;
-    }
-
-    .menu-acessibilidade.active {
+        transform: translate(-50%, -50%);
+        background-color: #f8f8f8;
+        border-top-right-radius: 150px;
         z-index: 1;
-    }
-
-
-    .container-login {
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-        height: 90vh;
-    }
-
-    .box-img {
-        width: 100vw;
-        height: 60vh;
-        display: flex;
-        background-image: linear-gradient(rgba(28, 72, 111, 0.8), rgba(28, 72, 111, 0.8)), url(../Imagens_projeto/2.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
     .box-side-bar {
         display: none;
     }
 
-    /* pagina login */
-    .box-login {
-        width: 100vw;
-        height: 280px;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        left: 50;
-        bottom: 0;
-        justify-content: center;
-        background-color: white;
-        border-top-right-radius: 200px;
-        justify-content: center;
-    }
 
     .box-login h1 {
-        padding-top: 150px;
+        margin-top: 40px;
+        margin-left: 20px;
     }
-
 
 
     .box-form {
@@ -896,8 +815,6 @@ header {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: max-content;
-        padding-top: 30px;
         font-size: 1rem;
     }
 
@@ -906,8 +823,8 @@ header {
     }
 
     #username {
-        width: 300px;
-        height: 15px;
+        width: 320px;
+        height: 30px;
         border-radius: 100px;
         border: 1px solid #1C486F;
         padding: 10px;
@@ -922,13 +839,12 @@ header {
         height: 100%;
         display: flex;
         flex-direction: column;
-
         align-items: center;
     }
 
     #password {
-        width: 300px;
-        height: 15px;
+        width: 320px;
+        height: 30px;
         border-radius: 100px;
         border: 1px solid #1C486F;
         padding: 10px;
@@ -940,148 +856,61 @@ header {
         height: max-content;
         justify-content: center;
         margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .abutton-login{
+        color: rgb(0, 0, 0);
     }
 
     #btn-entrar {
-        width: 55px;
-        height: 40px;
+        width: 80px;
+        height: 60px;
         border: none;
-        border-radius: 20px;
+        border-radius: 5px;
+        margin-top: 40%;
         background-color: #FFBD59;
         background-image: url(../Icones_projeto/11.png);
         background-position: center center;
-        background-size: contain;
+        background-size: 40px;
         background-repeat: no-repeat;
         cursor: pointer;
     }
-
-}
-
-@media only screen and (max-width: 429px) {
-    html {
-        width: 100vw;
-        height: 100VH;
+    .dark-mode .nav-list{
+        background-color: #15131b
     }
 
-    header {
-        width: 100vw;
-        height: 10%;
-        padding: 0px;
+    .dark-mode .menu-acessibilidade.active {
+        background: #1f1c27;
     }
 
-    .menu-acessibilidade.active {
-        z-index: 1;
+    
+    .dark-mode .box-img {
+        background-image: linear-gradient(rgba(28, 47, 65, 0.8), rgba(23, 36, 47, 0.8)), url(../Imagens_projeto/2.png);
     }
 
-    .container-login {
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-        height: 90vh;
-    }
-
-    .box-img {
-        width: 100vw;
-        height: 65vh;
-        display: flex;
-        background-image: linear-gradient(rgba(28, 72, 111, 0.8), rgba(28, 72, 111, 0.8)), url(../Imagens_projeto/2.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .box-side-bar {
-        display: none;
-    }
-
-    /* pagina login */
-    .box-login {
-        width: 100vw;
-        height: 280px;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        left: 50;
-        bottom: 0;
-        justify-content: center;
-        background-color: white;
-        border-top-right-radius: 200px;
-        justify-content: center;
-        z-index: 0;
-    }
-
-    .box-login h1 {
-        padding-top: 150px;
+    .dark-mode header{
+        background-color: #15131b;
     }
 
 
-
-    .box-form {
-        padding: 0px;
-        height: max-content;
+    .dark-mode .box-login h1 {
+        color: #ffffff;
     }
 
-    .container-credenciais {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: max-content;
-        padding-top: 30px;
-        font-size: 1rem;
-        z-index: 1;
+    .dark-mode input{
+        background-color: #15131b;
     }
 
-    .box-img>h1 {
-        display: none;
+    .dark-mode input::placeholder{
+        color: #ffffff;
     }
 
-    #username {
-        width: 300px;
-        height: 15px;
-        border-radius: 100px;
-        border: 1px solid #1C486F;
-        padding: 10px;
+    .dark-mode .box-login {
+        background-color: #15131b;
     }
 
-    .input-group {
-        height: max-content;
+    .dark-mode .abutton-login{
+        color: #ffffff;
     }
 
-    .box-form {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-    }
-
-    #password {
-        width: 300px;
-        height: 15px;
-        border-radius: 100px;
-        border: 1px solid #1C486F;
-        padding: 10px;
-
-    }
-
-    .box-btn {
-        display: flex;
-        height: max-content;
-        justify-content: center;
-        margin-top: 15px;
-    }
-
-    #btn-entrar {
-        width: 55px;
-        height: 40px;
-        border: none;
-        border-radius: 20px;
-        background-color: #FFBD59;
-        background-image: url(../Icones_projeto/11.png);
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        cursor: pointer;
-    }
 }

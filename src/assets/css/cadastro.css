@@ -56,54 +56,61 @@
 .dark-mode .menu-acessibilidade.active {
   background: #15131b;
 }
+
 /*dark*/
 
-body{
+body {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
 /*Web*/
-#tamanhoTexto{
-display: none;
+#tamanhoTexto {
+  display: none;
 }
-#tamanhoTexto.active{
+
+#tamanhoTexto.active {
   display: flex;
   position: fixed;
   margin-top: 45%;
   right: 3%;
   z-index: 2;
 }
-p{
+
+p {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
-h1{
+
+h1 {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
-h2{
+
+h2 {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
-a{
-  font-size: 18px;
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-div{
+
+a {
   font-size: 18px;
   font-family: "Chakra Petch", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
-[type="range"]{
+div {
+  font-size: 18px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+[type="range"] {
   transform: scale(1.5);
   appearance: none;
   border-radius: 5px;
@@ -112,7 +119,7 @@ div{
   border: solid 1px #163958;
 }
 
-[type="range"]::-webkit-slider-thumb{
+[type="range"]::-webkit-slider-thumb {
   appearance: none;
   height: 30px;
   width: 20px;
@@ -173,7 +180,7 @@ body {
   background-color: #f8f9fa;
 }
 
-html{
+html {
   font-family: "Chakra Petch", sans-serif;
   font-size: 16px;
 }
@@ -194,7 +201,8 @@ header {
   display: flex;
   flex-direction: row;
   width: 1440px;
-  justify-content: space-between
+  justify-content: space-between;
+  margin-inline: 16px;
 }
 
 
@@ -204,6 +212,7 @@ header {
   flex-direction: row;
   margin: 0;
   gap: 60px;
+
 }
 
 .nav-list li {
@@ -211,7 +220,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+
 }
 
 .nav-list a {
@@ -265,6 +275,7 @@ header {
   flex-direction: row;
   gap: 30px;
   justify-content: center;
+
 }
 
 #Entrar {
@@ -540,7 +551,7 @@ main {
   background: #ebebeb;
   border-radius: 200px;
   box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
-      inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
   cursor: pointer;
   transition: 1s;
 }
@@ -591,7 +602,7 @@ main {
   background: #bebebe;
   border-radius: 200px;
   box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
-      inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
   cursor: pointer;
   transition: 1s;
 }
@@ -659,7 +670,7 @@ main {
   background: #bebebe;
   border-radius: 200px;
   box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
-      inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
   cursor: pointer;
   transition: 1s;
 }
@@ -696,7 +707,7 @@ main {
 
 /*Botao de ativar slider texto*/
 
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1280px) {
 
   main {
     display: flex;
@@ -711,7 +722,7 @@ main {
     justify-content: space-between;
     width: 100%;
   }
-  
+
   #box-cadastro {
     display: flex;
     align-items: center;
@@ -722,7 +733,7 @@ main {
     background-position: center;
     color: #1c486f;
   }
-  
+
   #box-img {
     display: flex;
     width: 50%;
@@ -731,7 +742,7 @@ main {
     justify-content: center;
   }
 
-  #editar-box-img{
+  #editar-box-img {
     width: 80%;
   }
 
@@ -751,15 +762,15 @@ main {
   .cadastro h1 {
     text-align: center;
     margin-bottom: 20px;
-  
+
   }
-  
+
   .campo {
     margin-bottom: 30px;
     border-color: #1C486F;
   }
-  
-  
+
+
   .campo input {
     width: 450px;
     padding: 10px;
@@ -768,7 +779,7 @@ main {
     border-color: #1C486F;
     color: #007bff;
   }
-  
+
   .botoes {
     display: flex;
     justify-content: flex-end;
@@ -776,7 +787,7 @@ main {
     text-align: center;
     margin-top: 40px;
   }
-  
+
   .botoes button {
     padding: 10px 20px;
     background-color: #0e5694;
@@ -785,19 +796,19 @@ main {
     border-radius: 100px;
     cursor: pointer;
   }
-  
+
   .botoes button:hover {
     background-color: #e98c21;
   }
-  
+
   .botoes .voltar-button {
     background-color: #FCBD5E;
   }
-  
+
   .botoes .voltar-button:hover {
     background-color: #2980b9;
   }
-  
+
   .content {
     padding: 20px;
     background-color: #fff;
@@ -807,6 +818,10 @@ main {
 
 
 @media only screen and (max-width: 884px) {
+  .sessao-nav {
+    height: 70px;
+  }
+
 
   .dark #box-img {
     display: none;
@@ -835,19 +850,29 @@ main {
   .nav-list {
     position: absolute;
     display: flex;
+    flex-direction: column;
     right: 0px;
-    top: 69px;
-    width: 200px;
-    height: 350px;
+    top: 8%;
+    width: 350px;
+    height: 550px;
     background: #1C486F;
     clip-path: circle(100px at 100% -55%);
     transition: 0.5s ease-in-out;
-    padding: 10%;
-    justify-content: center;
-    text-align: center;
+    padding: 5%;
     flex-direction: column;
     pointer-events: none;
     border-bottom-left-radius: 25px;
+    gap: 80px;
+    margin: 0;
+  }
+
+  .nav-list li {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
   }
 
   .nav-list a {
@@ -871,7 +896,7 @@ main {
   }
 
   .nav.active .nav-list {
-    clip-path: circle(800px at 100% -15%);
+    clip-path: circle(900px at 100% -15%);
   }
 
   .nav.active .nav-list a {
@@ -890,7 +915,7 @@ main {
     right: 60%;
     top: 10%;
     width: 350px;
-    height: 200px;
+    height: 250px;
     background: #1c486f;
     border-radius: 5px;
     transition: 0.2s ease-in;
@@ -899,7 +924,7 @@ main {
 
   main {
     display: flex;
-    height: 134.5vw;
+    
   }
 
   #box-img {
@@ -913,7 +938,7 @@ main {
     background: linear-gradient(rgba(252, 199, 119, 0.9), rgba(252, 199, 119, 0.8)), url("/src/assets/imagem_cadastro/2.png") no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 93.6vh;
     background-position: center;
     color: #1c486f;
   }
@@ -923,10 +948,9 @@ main {
     flex-direction: column;
     background-color: #ffffff;
     padding: 30px;
-    width: 850px;
+    width: 750px;
     height: 600px;
     border-top-right-radius: 100px;
-    margin-top: 30%;
     border-color: #1c486f;
     align-items: center;
     justify-content: center;
@@ -954,12 +978,12 @@ main {
     margin-top: 3rem;
   }
 
-  .voltar-button{
+  .voltar-button {
     width: 10rem;
     height: 2.5rem;
   }
 
-  .cadastrar-button{
+  .cadastrar-button {
     width: 10rem;
     height: 2.5rem;
   }
@@ -1072,7 +1096,6 @@ main {
 
   main {
     display: flex;
-    height: 128vw;
   }
 
   #box-img {
@@ -1086,7 +1109,7 @@ main {
     background: linear-gradient(rgba(252, 199, 119, 0.9), rgba(252, 199, 119, 0.8)), url("/src/assets/imagem_cadastro/2.png") no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100.5vh;
     background-position: center;
     color: #1c486f;
   }
@@ -1127,12 +1150,12 @@ main {
     margin-top: 3rem;
   }
 
-  .voltar-button{
+  .voltar-button {
     width: 10rem;
     height: 2.5rem;
   }
 
-  .cadastrar-button{
+  .cadastrar-button {
     width: 10rem;
     height: 2.5rem;
   }
@@ -1258,7 +1281,7 @@ main {
     background: linear-gradient(rgba(252, 199, 119, 0.9), rgba(252, 199, 119, 0.8)), url("/src/assets/imagem_cadastro/2.png") no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 1155px;
+    height: 101.5vh;
     background-position: center;
     color: #1c486f;
   }
@@ -1299,12 +1322,12 @@ main {
     margin-top: 3rem;
   }
 
-  .voltar-button{
+  .voltar-button {
     width: 10rem;
     height: 2.5rem;
   }
 
-  .cadastrar-button{
+  .cadastrar-button {
     width: 10rem;
     height: 2.5rem;
   }
@@ -1416,7 +1439,6 @@ main {
 
   main {
     display: flex;
-    height: 116.9vw;
   }
 
   #box-img {
@@ -1430,7 +1452,7 @@ main {
     background: linear-gradient(rgba(252, 199, 119, 0.9), rgba(252, 199, 119, 0.8)), url("/src/assets/imagem_cadastro/2.png") no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100.5vh;
     background-position: center;
     color: #1c486f;
   }
@@ -1471,12 +1493,12 @@ main {
     margin-top: 3rem;
   }
 
-  .voltar-button{
+  .voltar-button {
     width: 10rem;
     height: 2.5rem;
   }
 
-  .cadastrar-button{
+  .cadastrar-button {
     width: 10rem;
     height: 2.5rem;
   }
@@ -1624,7 +1646,7 @@ main {
   }
 
   .campo input {
-    width:350px;
+    width: 350px;
     border: 1px solid #ccc;
     border-radius: 50px;
     border-color: #1C486F;
@@ -1746,7 +1768,7 @@ main {
     display: flex;
     flex-direction: row;
     background-color: #007bff;
-    height:191.8vw;
+    height: 191.8vw;
   }
 
   #box-img {
@@ -1780,7 +1802,7 @@ main {
   }
 
   .campo input {
-    width:320px;
+    width: 320px;
     border: 1px solid #ccc;
     border-radius: 50px;
     border-color: #1C486F;
@@ -1810,6 +1832,7 @@ main {
 }
 
 @media only screen and (max-width: 393px) {
+
 
   .nav-list {
     display: none;
@@ -1902,7 +1925,7 @@ main {
     display: flex;
     flex-direction: row;
     background-color: #007bff;
-    height:185.5vw;
+    height: 185.5vw;
   }
 
   #box-img {
@@ -1936,7 +1959,7 @@ main {
   }
 
   .campo input {
-    width:320px;
+    width: 320px;
     border: 1px solid #ccc;
     border-radius: 50px;
     border-color: #1C486F;
@@ -2058,7 +2081,7 @@ main {
     display: flex;
     flex-direction: row;
     background-color: #007bff;
-    height:199vw;
+    height: 199vw;
   }
 
   #box-img {
@@ -2092,7 +2115,7 @@ main {
   }
 
   .campo input {
-    width:320px;
+    width: 320px;
     border: 1px solid #ccc;
     border-radius: 50px;
     border-color: #1C486F;
@@ -2214,7 +2237,7 @@ main {
     display: flex;
     flex-direction: row;
     background-color: #007bff;
-    height:199vw;
+    height: 199vw;
   }
 
   #box-img {
@@ -2248,7 +2271,7 @@ main {
   }
 
   .campo input {
-    width:320px;
+    width: 320px;
     border: 1px solid #ccc;
     border-radius: 50px;
     border-color: #1C486F;
@@ -2371,7 +2394,7 @@ main {
     display: flex;
     flex-direction: row;
     background-color: #007bff;
-    height:200vw;
+    height: 200vw;
   }
 
   #box-img {
@@ -2405,7 +2428,7 @@ main {
   }
 
   .campo input {
-    width:320px;
+    width: 320px;
     border: 1px solid #ccc;
     border-radius: 50px;
     border-color: #1C486F;
@@ -2551,7 +2574,7 @@ main {
     background-color: #ffffff;
     box-shadow: 2px 5px rgba(190, 189, 196, 0.1);
     border-top-right-radius: 100px;
-    margin-top: 28%;
+    margin-top: 70%;
   }
 
 
