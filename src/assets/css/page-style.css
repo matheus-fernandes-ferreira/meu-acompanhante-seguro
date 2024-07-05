@@ -256,7 +256,6 @@ header {
     height: 100px;
     width: 350px;
     padding-left: 0px;
-    padding-bottom: 70%;
     justify-content: space-around;
     align-items: center
 }
@@ -326,7 +325,7 @@ header {
     right: 1%;
     top: 12%;
     width: 350px;
-    height: 340px;
+    height: 240px;
     background: #1c486f;
     border-radius: 5px;
     transition: 0.2s ease-in;
@@ -827,6 +826,12 @@ footer {
     align-items: center;
 }
 
+.btn-narrador-de-texto{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
 .btn-audio {
     display: flex;
     align-items: center;
@@ -1077,32 +1082,6 @@ footer {
         transition: 0.2s ease-in;
     }
     
-    
-    
-    
-    /*Começo Menu flutuante*/
-    .txtbtn1 {
-        display: flex;
-        flex-direction: row;
-        height: 100px;
-        width: 350px;
-        padding-left: 0px;
-        padding-bottom: 70%;
-        justify-content: space-around;
-        align-items: center
-    }
-    
-    .txtmodoesc {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-weight: 500;
-        height: 50px;
-        width: 200px;
-    }
-    
     .sessao-nav {
         display: flex;
         flex-direction: row;
@@ -1192,12 +1171,9 @@ footer {
     
     
     .logo-banner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40%;
-        margin-left: 40px;
+        width: 200px;
     }
+    
     
     
     .texto-banner {
@@ -1927,7 +1903,6 @@ footer {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
         border-bottom-left-radius: 25px;
         gap: 60px;
         margin: 0;
@@ -2030,7 +2005,7 @@ footer {
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 23px;
     }
 
 
@@ -2277,7 +2252,6 @@ footer {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
         border-bottom-left-radius: 25px;
         gap: 60px;
         margin: 0;
@@ -2380,7 +2354,7 @@ footer {
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 23px;
     }
 
 
@@ -2632,7 +2606,6 @@ footer {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
         border-bottom-left-radius: 25px;
         gap: 60px;
         margin: 0;
@@ -2735,7 +2708,7 @@ footer {
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 23px;
     }
 
 
@@ -2984,7 +2957,6 @@ footer {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
         border-bottom-left-radius: 25px;
         gap: 60px;
         margin: 0;
@@ -3087,7 +3059,7 @@ footer {
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 23px;
     }
 
 
@@ -3336,7 +3308,6 @@ footer {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
         border-bottom-left-radius: 25px;
         gap: 40px;
         margin: 0;
@@ -3439,7 +3410,7 @@ footer {
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 22px;
     }
 
 
@@ -3647,7 +3618,6 @@ footer {
         background: #163958;
         border-radius: 15px;
         transition: 0.2s ease-in;
-        pointer-events: none;
         z-index: 2;
     }
 
@@ -3689,7 +3659,6 @@ footer {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
         border-bottom-left-radius: 25px;
         gap: 40px;
         margin: 0;
@@ -3794,7 +3763,7 @@ footer {
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 17px;
     }
 
 
@@ -4000,7 +3969,6 @@ footer {
         background: #163958;
         border-radius: 15px;
         transition: 0.2s ease-in;
-        pointer-events: none;
         z-index: 2;
     }
 
@@ -4042,7 +4010,6 @@ footer {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
         border-bottom-left-radius: 25px;
         gap: 40px;
         margin: 0;
@@ -4147,7 +4114,7 @@ footer {
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 17px;
     }
 
 
@@ -4353,7 +4320,6 @@ footer {
         background: #163958;
         border-radius: 15px;
         transition: 0.2s ease-in;
-        pointer-events: none;
         z-index: 2;
     }
 
@@ -4395,7 +4361,6 @@ footer {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
         border-bottom-left-radius: 25px;
         gap: 40px;
         margin: 0;
@@ -4500,7 +4465,7 @@ footer {
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 17px;
     }
 
 
@@ -4707,8 +4672,7 @@ footer {
         background: #163958;
         border-radius: 15px;
         transition: 0.2s ease-in;
-        pointer-events: none;
-        z-index: 2;
+        z-index: 3;
     }
 
 
@@ -4749,7 +4713,7 @@ footer {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
+        
         border-bottom-left-radius: 25px;
         gap: 40px;
         margin: 0;
@@ -4854,7 +4818,7 @@ footer {
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 17px;
     }
 
 
@@ -4903,9 +4867,9 @@ footer {
     #tamanhoTexto.active {
         display: flex;
         position: fixed;
-        margin-top: 200%;
+        margin-top: 170%;
         right: 30%;
-        z-index: 3;
+        z-index: 2;
     }
 
 
@@ -4973,6 +4937,7 @@ footer {
         padding-top: 20px;
     }
 
+    
     .box-texto>p {
         padding-left: 20px;
         padding-right: 20px;
@@ -5060,7 +5025,7 @@ footer {
         background: #163958;
         border-radius: 15px;
         transition: 0.2s ease-in;
-        pointer-events: none;
+        
         z-index: 2;
     }
 
@@ -5102,7 +5067,6 @@ footer {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
         border-bottom-left-radius: 25px;
         gap: 40px;
         margin: 0;
@@ -5117,6 +5081,7 @@ footer {
         flex-direction: row;
         width: 1440px;
         justify-content: space-between;
+        
     }
 
     .nav-list li {
@@ -5126,6 +5091,7 @@ footer {
         align-items: center;
         justify-content: center;
         margin-left: 5px;
+        
     }
 
     .nav-list a {
@@ -5134,6 +5100,7 @@ footer {
         color: #fff;
         align-items: center;
         justify-content: center;
+        
     }
 
     .nav-list a:hover {
@@ -5161,9 +5128,6 @@ footer {
         clip-path: circle(450px at 90% -15%);
     }
 
-    .nav.active .nav-list a {
-        opacity: 1;
-    }
 
     /*Fim Hamburger*/
 
@@ -5200,14 +5164,14 @@ footer {
         justify-content: center;
     }
 
-    .texto-banner {
+    .texto-banner{
         display: flex;
         width: 320px;
         margin-left: 0;
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 17px;
     }
 
 
@@ -5256,7 +5220,7 @@ footer {
     #tamanhoTexto.active {
         display: flex;
         position: fixed;
-        margin-top: 200%;
+        margin-top: 170%;
         right: 30%;
         z-index: 3;
     }
@@ -5459,7 +5423,6 @@ footer {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
         border-bottom-left-radius: 25px;
         gap: 40px;
         margin: 0;
@@ -5564,7 +5527,7 @@ footer {
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 17px;
     }
 
 
@@ -5815,7 +5778,6 @@ footer {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
         border-bottom-left-radius: 25px;
         gap: 40px;
         margin: 0;
@@ -5920,7 +5882,7 @@ footer {
         padding: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 17px;
     }
 
 
@@ -6167,7 +6129,6 @@ footer {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
         border-bottom-left-radius: 25px;
         gap: 40px;
         margin: 0;
@@ -6272,6 +6233,7 @@ footer {
         padding: 10px;
         justify-content: center;
         align-items: center;
+        font-size: 18px;
     }
 
 
@@ -6344,4 +6306,13 @@ footer {
         background-color: #1C486F;
     }
 
+    .txtbtn1 {
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        width: 350px;
+        padding-left: 0px;
+        justify-content: space-around;
+        align-items: center
+    }
 }
